@@ -1,0 +1,659 @@
+/* File path: web/src/pages/dashboards/student/Simulations.css
+   Scope: Simulations.jsx only. Do NOT import elsewhere. */
+
+/* ── Page header ──────────────────────────────────────────────────────────── */
+.sim-ph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: var(--rule-strong-width) solid var(--color-fg);
+  margin-bottom: 28px;
+}
+.sim-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+.sim-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+.sim-ph-sub {
+  font-size: 14.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-top: 7px;
+}
+
+/* ── Two-column layout ────────────────────────────────────────────────────── */
+.sim-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 36px;
+  align-items: start;
+}
+
+/* ── Right rail ───────────────────────────────────────────────────────────── */
+.sim-rail {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-hairline);
+  padding: 0 20px;
+  background: var(--color-surface);
+}
+.sim-rail-block {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.sim-rail-block:last-child { border-bottom: 0; }
+.sim-rail-label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: var(--font-ui);
+}
+
+/* ── Hero card ────────────────────────────────────────────────────────────── */
+.sim-hero {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+}
+.sim-hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px 26px 0;
+  margin-bottom: 16px;
+}
+.sim-hero-eyebrow {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.sim-hero h2 {
+  font-family: var(--font-ui);
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: var(--color-fg);
+}
+.sim-hero h2 .it {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+.sim-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.sim-hero-cta:hover { background-color: var(--color-accent); color: #ffffff; }
+.sim-hero-cta svg  { transition: transform 160ms ease; }
+.sim-hero-cta:hover svg { transform: translateX(3px); }
+.sim-hero-desc {
+  padding: 0 26px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-bottom: 18px;
+}
+.sim-hero-meta {
+  padding: 0 26px 16px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+.sim-hero-empty {
+  padding: 18px 26px;
+  border-top: 1px solid var(--color-hairline);
+}
+.sim-hero-empty p {
+  font-size: 14px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.65;
+}
+
+/* ── Stat row ─────────────────────────────────────────────────────────────── */
+.sim-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+}
+.sim-stat {
+  padding: 14px 18px 14px 0;
+  border-right: 1px solid var(--color-hairline);
+  display: flex;
+  flex-direction: column;
+}
+.sim-stat:nth-child(n+2) { padding-left: 18px; }
+.sim-stat:first-child    { padding-left: 26px; }
+.sim-stat:last-child     { border-right: 0; padding-right: 26px; }
+.sim-stat-label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  margin-bottom: 6px;
+  font-family: var(--font-ui);
+}
+.sim-stat-val {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-fg);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.sim-stat-val .sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-fg-subtle);
+}
+.sim-stat-meta {
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+}
+
+/* ── Session history row (inside hero, below stats) ───────────────────────── */
+.sim-sessions {
+  padding: 12px 26px;
+  border-top: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.sim-sessions-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.sim-session-chips {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  flex-wrap: wrap;
+}
+.sim-session-chip {
+  display: inline-flex;
+  padding: 3px 9px;
+  font-size: 12.5px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface-2);
+  font-family: var(--font-display);
+}
+.sim-session-sep {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  line-height: 1;
+}
+.sim-sessions-pass {
+  margin-left: auto;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  white-space: nowrap;
+}
+
+/* ── 3D canvas block ──────────────────────────────────────────────────────── */
+.sim-canvas-block {
+  margin-top: 10px;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+.sim-canvas-head {
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sim-canvas-title {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  font-family: var(--font-ui);
+}
+.sim-canvas-tag {
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg-muted);
+  background: transparent;
+  font-family: var(--font-ui);
+}
+/* ── Preview model tab switcher (unlocked after first sim completion) ─────── */
+.sim-preview-tabs {
+  display: flex;
+  gap: 4px;
+}
+.sim-preview-tab {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg-subtle);
+  background: transparent;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.sim-preview-tab.active {
+  color: var(--color-fg);
+  border-color: var(--color-fg-muted);
+  background: var(--color-surface-2);
+}
+.sim-preview-tab:hover:not(.active) {
+  color: var(--color-fg-muted);
+  border-color: var(--color-fg-subtle);
+}
+.sim-canvas-wrap {
+  position: relative;
+  height: 360px;
+  background: var(--color-surface-2);
+}
+.sim-canvas-hint {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: var(--color-fg-muted);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  padding: 4px 12px;
+  white-space: nowrap;
+  font-family: var(--font-ui);
+  pointer-events: none;
+}
+.sim-canvas-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  letter-spacing: 0.08em;
+}
+
+/* ── Section head (mirrors Overview .section-head) ───────────────────────── */
+.sim-section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+.sim-section-head h3 {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  white-space: nowrap;
+  position: relative;
+  padding-left: 12px;
+}
+.sim-section-head h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 13px;
+  background: var(--color-accent);
+}
+.sim-section-head .rule {
+  flex: 1;
+  border-top: 1px solid var(--color-hairline);
+  transform: translateY(-4px);
+}
+
+/* ── Performance analysis card ────────────────────────────────────────────── */
+.sim-perf {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+.sim-perf-head {
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.sim-perf-head-title {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  font-family: var(--font-ui);
+  margin-bottom: 2px;
+}
+.sim-perf-head-sub {
+  font-size: 13.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+}
+.sim-perf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sim-perf-col {
+  padding: 16px 22px;
+  border-right: 1px solid var(--color-hairline);
+}
+.sim-perf-col:last-child { border-right: 0; }
+.sim-perf-col-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  font-family: var(--font-ui);
+  margin-bottom: 14px;
+}
+.sim-bar-item {
+  margin-bottom: 12px;
+}
+.sim-bar-item:last-child { margin-bottom: 0; }
+.sim-bar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+.sim-bar-name {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+}
+.sim-bar-count {
+  font-size: 12.5px;
+  color: var(--color-fg-subtle);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+}
+.sim-bar-track {
+  height: 4px;
+  background: var(--color-surface-3);
+  position: relative;
+}
+.sim-bar-fill {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  transition: width 500ms ease-out;
+}
+
+/* ── Approach card ────────────────────────────────────────────────────────── */
+.sim-approach {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  padding: 22px 26px;
+}
+.sim-approach-title {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-fg);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+.sim-approach-desc {
+  font-size: 14px;
+  color: var(--color-fg-muted);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-family: var(--font-ui);
+}
+.sim-approach-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sim-approach-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.6;
+}
+.sim-approach-dot {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* ── Mastery tiles (rail) ─────────────────────────────────────────────────── */
+.sim-mastery-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.sim-mastery-avg {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+.sim-mastery-avg-val {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.sim-mastery-avg-sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-fg-subtle);
+}
+.sim-mastery-tier-label {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  margin-top: 2px;
+  text-align: right;
+}
+.sim-mastery-tiles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  margin-bottom: 10px;
+}
+.sim-mastery-tile {
+  padding: 7px 3px;
+  text-align: center;
+  border: 1px solid var(--color-hairline);
+  cursor: default;
+}
+.sim-mastery-tile-id {
+  font-size: 10px;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-display);
+}
+.sim-mastery-tile-val {
+  font-size: 9px;
+  display: block;
+  margin-top: 2px;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-ui);
+}
+.sim-mastery-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px solid var(--color-hairline);
+  flex-wrap: wrap;
+}
+.sim-mastery-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.sim-mastery-legend-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+}
+.sim-mastery-legend-label {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* ── Mastery skeleton ─────────────────────────────────────────────────────── */
+.sim-skeleton-line {
+  background: var(--color-surface-3);
+  height: 10px;
+  margin-bottom: 8px;
+}
+
+/* ── Deboning procedure list (rail) ───────────────────────────────────────── */
+.sim-procedure-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.sim-procedure-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.sim-procedure-num {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  font-family: var(--font-ui);
+  margin-top: 1px;
+}
+.sim-procedure-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin-bottom: 3px;
+}
+.sim-procedure-desc {
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.6;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .sim-layout          { grid-template-columns: 1fr; }
+  .sim-rail            { width: 100%; }
+  .sim-perf-grid       { grid-template-columns: 1fr; }
+  .sim-perf-col        { border-right: 0; border-bottom: 1px solid var(--color-hairline); }
+  .sim-perf-col:last-child { border-bottom: 0; }
+  .sim-ph-title        { font-size: 28px; }
+  .sim-hero h2         { font-size: 24px; }
+  .sim-hero-top        { flex-direction: column; gap: 16px; }
+  .sim-hero-cta        { width: 100%; justify-content: center; }
+}
+@media (max-width: 560px) {
+  .sim-stats { grid-template-columns: 1fr 1fr; }
+  .sim-stat:nth-child(3) {
+    grid-column: span 2;
+    border-right: 0;
+    border-top: 1px solid var(--color-hairline);
+    padding-left: 26px;
+  }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .sim-ph-title        { font-size: 44px; }
+  .sim-ph-sub          { font-size: 15px; }
+  .sim-hero h2         { font-size: 36px; }
+  .sim-stat-val        { font-size: 36px; }
+  .sim-section-head h3 { font-size: 22px; }
+  .sim-layout          { grid-template-columns: minmax(0, 1fr) 320px; }
+  .sim-hero-desc       { font-size: 16px; }
+}

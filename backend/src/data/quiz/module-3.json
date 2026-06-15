@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "What is the first cut made when filleting a fish?",
+    "option_a": "Along the backbone toward the tail",
+    "option_b": "Behind the gill plate at an angle",
+    "option_c": "Across the belly toward the spine",
+    "option_d": "At the tail end straight across",
+    "correct_answer": "B",
+    "explanation": "The first cut is made behind the gill plate at an angle down to the backbone."
+  },
+  {
+    "id": 2,
+    "question": "When cutting along the backbone during filleting, what angle should the knife blade be?",
+    "option_a": "Perpendicular to the backbone",
+    "option_b": "Flat against the backbone",
+    "option_c": "At 45 degrees away from backbone",
+    "option_d": "Vertical to the board",
+    "correct_answer": "B",
+    "explanation": "Keep the blade flat against the backbone using smooth, continuous strokes."
+  },
+  {
+    "id": 3,
+    "question": "What tool is best for removing pin bones from fillets?",
+    "option_a": "Flat-nose or standard bench pliers",
+    "option_b": "Fish tweezers or needle-nose pliers",
+    "option_c": "The tip of the fillet knife",
+    "option_d": "Fingertips with steady firm pressure",
+    "correct_answer": "B",
+    "explanation": "Use fish tweezers or needle-nose pliers to remove pin bones at a slight angle."
+  },
+  {
+    "id": 4,
+    "question": "What is the most common cause of ragged, torn flesh when filleting?",
+    "option_a": "Fish is too fresh",
+    "option_b": "Dull knife",
+    "option_c": "Wrong cutting board",
+    "option_d": "Fish is too cold",
+    "correct_answer": "B",
+    "explanation": "Ragged, torn flesh is caused by a dull knife. Always sharpen knife before filleting."
+  },
+  {
+    "id": 5,
+    "question": "What causes meat to be left on bones after filleting?",
+    "option_a": "Knife is too sharp",
+    "option_b": "Blade angle too high",
+    "option_c": "Fish is too large",
+    "option_d": "Cutting too fast",
+    "correct_answer": "B",
+    "explanation": "When the blade angle is too high, meat is left on bones. Keep knife flat against bones."
+  },
+  {
+    "id": 6,
+    "question": "When skinning a fillet skin-side down, what angle should the knife be held?",
+    "option_a": "90 degrees perpendicular",
+    "option_b": "45 degrees against skin",
+    "option_c": "180 degrees flat",
+    "option_d": "30 degrees upward",
+    "correct_answer": "B",
+    "explanation": "Hold knife at 45° angle against skin while pulling skin with sawing motion."
+  },
+  {
+    "id": 7,
+    "question": "What is the typical professional yield percentage for filleting round fish?",
+    "option_a": "20-30%",
+    "option_b": "35-45%",
+    "option_c": "50-60%",
+    "option_d": "65-75%",
+    "correct_answer": "B",
+    "explanation": "Professional filleting yield for round fish is 35-45% depending on species and skill level."
+  },
+  {
+    "id": 8,
+    "question": "Why should you use smooth, continuous strokes instead of sawing when filleting?",
+    "option_a": "It is faster and more time-efficient",
+    "option_b": "It produces cleaner cuts and less flesh damage",
+    "option_c": "It needs less force and physical effort",
+    "option_d": "It removes more meat from the bones",
+    "correct_answer": "B",
+    "explanation": "Smooth, continuous strokes produce cleaner cuts following natural bone contours with less flesh damage."
+  },
+  {
+    "id": 9,
+    "question": "What should you do with fish bones, head, and belly flaps after filleting?",
+    "option_a": "Discard them to keep the workspace clear",
+    "option_b": "Save for fish stock",
+    "option_c": "Rinse and return to cold storage",
+    "option_d": "Freeze separately for later commercial sale",
+    "correct_answer": "B",
+    "explanation": "Save bones, head, and belly flaps for making fish stock or use as pet food to reduce waste."
+  },
+  {
+    "id": 10,
+    "question": "What is the ideal length for a filleting knife blade?",
+    "option_a": "2-4 inches",
+    "option_b": "6-9 inches",
+    "option_c": "10-12 inches",
+    "option_d": "14-16 inches",
+    "correct_answer": "B",
+    "explanation": "A flexible filleting knife of 6-9 inches is ideal. The blade should bend slightly but not fold."
+  },
+  {
+    "id": 11,
+    "question": "Why are fillets very susceptible to bacterial action?",
+    "option_a": "They have high protein content",
+    "option_b": "Large exposed surface area",
+    "option_c": "They lack protective coating",
+    "option_d": "They are warmer than whole fish",
+    "correct_answer": "B",
+    "explanation": "The fillet's large exposed surface area makes it very susceptible to bacterial action, requiring strict hygiene."
+  },
+  {
+    "id": 12,
+    "question": "What is the ideal fish condition for filleting?",
+    "option_a": "While rigor mortis is still active",
+    "option_b": "Within minutes of being caught",
+    "option_c": "Post-rigor, after stiffening has resolved",
+    "option_d": "Slightly frozen or semi-thawed",
+    "correct_answer": "C",
+    "explanation": "Fish that have been chilled and passed the rigor condition are most suitable for filleting."
+  },
+  {
+    "id": 13,
+    "question": "What is \"gaping\" in fish fillets?",
+    "option_a": "Puncture holes left by pin bones",
+    "option_b": "When fillet flesh splits into visible fissures",
+    "option_c": "Detachment of the skin from the flesh",
+    "option_d": "Darkening or discoloration of fillet flesh",
+    "correct_answer": "B",
+    "explanation": "Gaping is the tendency of fillets to split into fissures, which can be prevented by proper handling."
+  },
+  {
+    "id": 14,
+    "question": "What happens to fish during rigor mortis that makes filleting difficult?",
+    "option_a": "Fish becomes too soft",
+    "option_b": "Muscles contract and stiffen",
+    "option_c": "Bones become brittle",
+    "option_d": "Skin becomes loose",
+    "correct_answer": "B",
+    "explanation": "During rigor mortis, fish muscles contract and stiffen, making filleting difficult and potentially damaging the flesh."
+  },
+  {
+    "id": 15,
+    "question": "For frozen-thawed fish to be suitable for filleting, within how many days of death must they have been frozen?",
+    "option_a": "1 day",
+    "option_b": "2-3 days",
+    "option_c": "5-7 days",
+    "option_d": "10 days",
+    "correct_answer": "B",
+    "explanation": "Fish must have been frozen within 2-3 days of death while stored near 0°C before freezing to prevent gaping."
+  },
+  {
+    "id": 16,
+    "question": "What storage temperature is required before freezing fish to maintain fillet quality?",
+    "option_a": "Near 0°C",
+    "option_b": "5°C",
+    "option_c": "10°C",
+    "option_d": "Room temperature",
+    "correct_answer": "A",
+    "explanation": "Fish must be stored near 0°C before freezing to ensure good quality fillets without gaping."
+  },
+  {
+    "id": 17,
+    "question": "What type of blade should a filleting knife have?",
+    "option_a": "Rigid and stiff throughout the blade",
+    "option_b": "Flexible that bends but doesn't fold",
+    "option_c": "Serrated along the cutting edge",
+    "option_d": "Thick-spined with a heavy tip",
+    "correct_answer": "B",
+    "explanation": "A filleting knife should have a flexible blade that bends slightly but not fold, allowing it to follow bone contours."
+  },
+  {
+    "id": 18,
+    "question": "In Step 1 of filleting, how deep should the initial cut behind the gill plate go?",
+    "option_a": "Only through the outer skin layer",
+    "option_b": "Halfway through the body of the fish",
+    "option_c": "Down to the backbone without cutting through",
+    "option_d": "All the way through, splitting the fish",
+    "correct_answer": "C",
+    "explanation": "Cut down to the backbone but do not cut through it. Feel the resistance of the backbone with your knife."
+  },
+  {
+    "id": 19,
+    "question": "What motion should be used for the initial cut behind the gill plate?",
+    "option_a": "Sawing back and forth",
+    "option_b": "A single smooth motion",
+    "option_c": "Chopping motion",
+    "option_d": "Twisting motion",
+    "correct_answer": "B",
+    "explanation": "Use a single smooth motion rather than sawing for the initial cut behind the gill plate."
+  },
+  {
+    "id": 20,
+    "question": "When cutting along the backbone, what should guide your knife?",
+    "option_a": "Visual markers on the skin",
+    "option_b": "The backbone edges and bone contours",
+    "option_c": "A fixed predetermined cutting angle",
+    "option_d": "The fish's visible lateral line",
+    "correct_answer": "B",
+    "explanation": "The backbone edges and natural bone contours should guide your knife during the cut along the backbone."
+  },
+  {
+    "id": 21,
+    "question": "What should you feel when cutting along the backbone correctly?",
+    "option_a": "No resistance from the bones at all",
+    "option_b": "Slight resistance as blade follows bone contours",
+    "option_c": "Hard resistance that requires heavy force",
+    "option_d": "The blade cutting directly through the bones",
+    "correct_answer": "B",
+    "explanation": "You should feel slight resistance as the blade follows bone contours and smooth gliding motion through the flesh."
+  },
+  {
+    "id": 22,
+    "question": "When separating the fillet from the rib cage, what are the two approaches mentioned?",
+    "option_a": "Cut through the ribs or cut beside them",
+    "option_b": "Cut over the ribs or cut under the ribs",
+    "option_c": "Score the ribs or lift them outward",
+    "option_d": "Press over the ribs or snap them free",
+    "correct_answer": "B",
+    "explanation": "The two approaches are: cut over the ribs (leaving them on fillet for later removal) or cut under the ribs (cleaner immediate result)."
+  },
+  {
+    "id": 23,
+    "question": "Which rib-cutting approach is best for beginners?",
+    "option_a": "Cut under the ribs",
+    "option_b": "Cut over the ribs",
+    "option_c": "Cut through the ribs",
+    "option_d": "Avoid the rib area",
+    "correct_answer": "B",
+    "explanation": "Cutting over the ribs is best for beginners as it provides maximum yield, though ribs must be removed later."
+  },
+  {
+    "id": 24,
+    "question": "Which approach produces a cleaner fillet immediately?",
+    "option_a": "Cutting over the ribs",
+    "option_b": "Cutting under the ribs",
+    "option_c": "Removing ribs before filleting",
+    "option_d": "Both approaches are equal",
+    "correct_answer": "B",
+    "explanation": "Cutting under the ribs produces a cleaner fillet immediately and is best for experienced processors when speed matters."
+  },
+  {
+    "id": 25,
+    "question": "Why must you work slowly in the rib section?",
+    "option_a": "The rib bones are especially dense and hard",
+    "option_b": "The belly meat is thin and cuts through easily",
+    "option_c": "To preserve the sharp edge of the blade",
+    "option_d": "To count each rib before cutting past it",
+    "correct_answer": "B",
+    "explanation": "The belly meat is thin in the rib section, so you must work slowly to avoid cutting through it."
+  },
+  {
+    "id": 26,
+    "question": "How many fillets do most round fish yield?",
+    "option_a": "One fillet",
+    "option_b": "Two fillets",
+    "option_c": "Three fillets",
+    "option_d": "Four fillets",
+    "correct_answer": "B",
+    "explanation": "Most round fish yield two fillets - one from each side of the backbone."
+  },
+  {
+    "id": 27,
+    "question": "How should pin bones be detected in a fillet?",
+    "option_a": "By looking closely at the fillet surface",
+    "option_b": "By running fingers along the centerline",
+    "option_c": "By holding the fillet up to light",
+    "option_d": "By pressing firmly along the edges",
+    "correct_answer": "B",
+    "explanation": "Run your fingers along the centerline of the fillet to feel for small, firm protrusions - pin bones are easier to feel than see."
+  },
+  {
+    "id": 28,
+    "question": "Where are pin bones usually located in a fillet?",
+    "option_a": "Along the outer edges of the fillet",
+    "option_b": "In a line down the thicker part",
+    "option_c": "Scattered randomly throughout the flesh",
+    "option_d": "Concentrated near the tail end only",
+    "correct_answer": "B",
+    "explanation": "Pin bones are usually in a line down the thicker part of the fillet along the centerline."
+  },
+  {
+    "id": 29,
+    "question": "What direction should pin bones be pulled when removing them?",
+    "option_a": "Straight up and perpendicular to the flesh",
+    "option_b": "At a slight angle in the direction they grow",
+    "option_c": "Directly toward the tail end",
+    "option_d": "Directly toward the head end",
+    "correct_answer": "B",
+    "explanation": "Pull at a slight angle in the direction the bone grows using steady, firm pressure without yanking."
+  },
+  {
+    "id": 30,
+    "question": "What is the first step when skinning a fillet?",
+    "option_a": "Cut the fillet along its centerline first",
+    "option_b": "Place fillet skin-side down with tail end closest",
+    "option_c": "Remove all remaining pin bones first",
+    "option_d": "Chill or partially freeze the fillet first",
+    "correct_answer": "B",
+    "explanation": "Position the fillet skin-side down on a clean cutting board with the tail end closest to you."
+  },
+  {
+    "id": 31,
+    "question": "Where should the initial cut be made when skinning?",
+    "option_a": "At the head end of the fillet",
+    "option_b": "At the midpoint of the fillet",
+    "option_c": "At the tail end between skin and flesh",
+    "option_d": "Along the entire length from end to end",
+    "correct_answer": "C",
+    "explanation": "Make a small cut at the tail end between skin and flesh, about 1-2 cm deep, without cutting through the skin."
+  },
+  {
+    "id": 32,
+    "question": "Why is coarse salt recommended when skinning fillets?",
+    "option_a": "To help preserve the fillet's freshness",
+    "option_b": "To help maintain grip on slippery skin",
+    "option_c": "To season and enhance the fillet's flavor",
+    "option_d": "To disinfect the skin surface during processing",
+    "correct_answer": "B",
+    "explanation": "A bit of coarse salt on fingers helps maintain grip on the slippery skin during the skinning process."
+  },
+  {
+    "id": 33,
+    "question": "During skinning, should the blade be pressed against the skin or the flesh?",
+    "option_a": "Against the flesh",
+    "option_b": "Against the skin",
+    "option_c": "Between both equally",
+    "option_d": "Against neither",
+    "correct_answer": "B",
+    "explanation": "Keep the blade pressed firmly against the skin (not the flesh) while using a gentle sawing motion."
+  },
+  {
+    "id": 34,
+    "question": "What are the four critical factors in fish handling during filleting?",
+    "option_a": "Size, color, texture, smell",
+    "option_b": "Low temperature, cleanliness, speed, care",
+    "option_c": "Cutting, washing, storing, selling",
+    "option_d": "Scaling, gutting, filleting, packaging",
+    "correct_answer": "B",
+    "explanation": "The four pillars are: low temperature, cleanliness, speed, and care in handling."
+  },
+  {
+    "id": 35,
+    "question": "What temperature should fish be kept at during filleting?",
+    "option_a": "Near 0°C",
+    "option_b": "5-10°C",
+    "option_c": "10-15°C",
+    "option_d": "Room temperature",
+    "correct_answer": "A",
+    "explanation": "Keep fish at near 0°C throughout processing to prevent bacterial growth and maintain quality."
+  },
+  {
+    "id": 36,
+    "question": "Why is speed important during filleting?",
+    "option_a": "To increase throughput and raise profits",
+    "option_b": "To minimize quality loss and bacterial growth",
+    "option_c": "To demonstrate skill and impress customers",
+    "option_d": "To reduce worker fatigue and effort",
+    "correct_answer": "B",
+    "explanation": "Process quickly to minimize quality loss - every minute at improper temperature accelerates deterioration and bacterial growth."
+  },
+  {
+    "id": 37,
+    "question": "Why should fish not be handled frequently during processing?",
+    "option_a": "Frequent handling increases processing costs",
+    "option_b": "Physical damage creates bacteria entry points",
+    "option_c": "Repeated handling takes more processing time",
+    "option_d": "Frequent movement confuses the processor",
+    "correct_answer": "B",
+    "explanation": "Physical damage from frequent handling creates entry points for bacteria and reduces product quality and shelf life."
+  },
+  {
+    "id": 38,
+    "question": "What happens if you fillet fish that are still in rigor mortis?",
+    "option_a": "Improved yield and less waste",
+    "option_b": "Faster and more efficient processing",
+    "option_c": "Increased risk of gaping in fillets",
+    "option_d": "Better flavor in the final product",
+    "correct_answer": "C",
+    "explanation": "Filleting during rigor mortis increases the risk of gaping - fillets developing fissures or splits."
+  },
+  {
+    "id": 39,
+    "question": "What is the expected yield for flat fish like sole?",
+    "option_a": "30-40%",
+    "option_b": "35-45%",
+    "option_c": "40-50%",
+    "option_d": "50-60%",
+    "correct_answer": "C",
+    "explanation": "Flat fish have 40-50% yield, higher than round fish due to anatomy - 4 fillets are possible."
+  },
+  {
+    "id": 40,
+    "question": "What is the expected yield for bony fish like milkfish?",
+    "option_a": "20-30%",
+    "option_b": "30-40%",
+    "option_c": "40-50%",
+    "option_d": "50-60%",
+    "correct_answer": "B",
+    "explanation": "Bony fish have 30-40% yield, lower due to complex bone structure."
+  },
+  {
+    "id": 41,
+    "question": "What is the expected yield for large tuna?",
+    "option_a": "35-45%",
+    "option_b": "40-50%",
+    "option_c": "45-55%",
+    "option_d": "55-65%",
+    "correct_answer": "C",
+    "explanation": "Large tuna have excellent yield of 45-55% due to being large, meaty fish with simple bone structure."
+  },
+  {
+    "id": 42,
+    "question": "What factor does NOT affect filleting yield?",
+    "option_a": "Skill level of processor",
+    "option_b": "Color of cutting board",
+    "option_c": "Knife sharpness",
+    "option_d": "Fish size",
+    "correct_answer": "B",
+    "explanation": "Cutting board color doesn't affect yield. Factors include skill level, fish size, condition, species anatomy, knife sharpness, and processing method."
+  },
+  {
+    "id": 43,
+    "question": "Why do larger fish generally have better yield percentages?",
+    "option_a": "They have fewer bones",
+    "option_b": "Higher meat-to-bone ratio",
+    "option_c": "They are easier to cut",
+    "option_d": "Their skin is thicker",
+    "correct_answer": "B",
+    "explanation": "Larger fish generally have better yield percentages due to higher meat-to-bone ratio."
+  },
+  {
+    "id": 44,
+    "question": "What should you do if your knife starts pulling rather than cutting during skinning?",
+    "option_a": "Apply more pressure",
+    "option_b": "Change the angle",
+    "option_c": "Sharpen the knife",
+    "option_d": "Use a sawing motion",
+    "correct_answer": "C",
+    "explanation": "If the knife is pulling rather than cutting cleanly, it needs sharpening for effective skinning."
+  },
+  {
+    "id": 45,
+    "question": "At what stage of learning should beginners focus on speed?",
+    "option_a": "Starting from the very first fish",
+    "option_b": "Speed is never a relevant goal",
+    "option_c": "Only after mastering technique and consistency",
+    "option_d": "After processing just one or two fish",
+    "correct_answer": "C",
+    "explanation": "Beginners (1-10 fish) should focus on understanding anatomy and basic movements. Speed doesn't matter yet - it comes naturally with practice."
+  },
+  {
+    "id": 46,
+    "question": "What is recommended for practicing filleting skills?",
+    "option_a": "Begin practice on expensive premium species",
+    "option_b": "Begin with smaller, more complex fish",
+    "option_c": "Start with larger fish with simple bone structures",
+    "option_d": "Practice only by watching videos first",
+    "correct_answer": "C",
+    "explanation": "Start with larger fish with simple bone structures (like salmon or sea bass), then progress to more complex species. Practice on less expensive fish first."
+  },
+  {
+    "id": 47,
+    "question": "What indicates you should replace your filleting knife?",
+    "option_a": "After completing a set number of fish",
+    "option_b": "On a regular fixed monthly schedule",
+    "option_c": "When it becomes worn and can't maintain an edge",
+    "option_d": "When the blade shows visible rust spots",
+    "correct_answer": "C",
+    "explanation": "Replace worn tools promptly - when a knife can't maintain a sharp edge despite sharpening, it needs replacement."
+  },
+  {
+    "id": 48,
+    "question": "Why should you watch the blade and not the fish while cutting?",
+    "option_a": "The fish could shift unexpectedly",
+    "option_b": "To maintain proper angle and control",
+    "option_c": "To help count and track your strokes",
+    "option_d": "To prevent distraction during cutting",
+    "correct_answer": "B",
+    "explanation": "Watch the blade, not the fish, while cutting to maintain proper angle and control throughout the filleting process."
+  },
+  {
+    "id": 49,
+    "question": "What alternative use is mentioned for fish frames after filleting?",
+    "option_a": "Decoration",
+    "option_b": "Pet food",
+    "option_c": "Building materials",
+    "option_d": "Fuel",
+    "correct_answer": "B",
+    "explanation": "Fish frames can be used for pet food, in addition to fish stock, fertilizer, and fishing bait."
+  },
+  {
+    "id": 50,
+    "question": "How many fish should intermediate-stage processors have filleted before advancing?",
+    "option_a": "1-10 fish",
+    "option_b": "10-50 fish",
+    "option_c": "50-100 fish",
+    "option_d": "100+ fish",
+    "correct_answer": "B",
+    "explanation": "Intermediate stage is 10-50 fish, where processors work on consistency, reducing waste, and developing rhythm."
+  }
+]

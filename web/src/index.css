@@ -1,0 +1,609 @@
+﻿/* File Path: CvSUHimayEditorial\web\src\index.css */
+
+/* @import rules must precede all other statements per CSS spec. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 400 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* Tailwind v4 Theme Configuration
+   ────────────────────────────────────────────────────────────────────
+   Light values are the declared defaults here; `.dark` overrides them
+   below. Tailwind v4 generates utilities (bg-surface, text-fg, etc.)
+   that reference var(--color-*) so dark-mode swaps work at runtime. */
+@theme {
+  /* Legacy aliases — kept so existing bg-[color:var(--color-surface-warm)]
+     references and achievements.js hard-coded green keep rendering. */
+  --color-green-primary: #04510e;
+  --color-tertiary:      #4a5b5b;  /* desaturated teal-grey for secondary stats */
+  --color-green-dark:    #033a0a;
+  --color-green-light:   #05611a;
+  --color-green-muted:   #0d9626;
+  --color-surface-warm:  #faf7f2;
+  --color-accent-gold:   #f4b230;
+  --color-feedback-error:#a52a2a;
+
+  /* Surfaces (light canonical in @theme; dark overrides under .dark) */
+  --color-bg:             #f7f3ea;
+  --color-surface:        #fdfcf8;
+  --color-surface-2:      #f3efe6;
+  --color-surface-3:      #e8e2d8;
+  --color-border:         #e8e2d8;
+  --color-border-strong:  #a09080;
+
+  /* Text */
+  --color-fg:             #1a1410;
+  --color-fg-muted:       #5a4a3a;
+  --color-fg-subtle:      #776656;
+
+  /* Accent — single CvSU forest green for all interactive surfaces in light mode.
+     Dark mode overrides (see .dark below) lift this to a WCAG-passing green
+     that reads on #111111 surfaces. */
+  --color-accent:         #04510e;
+  --color-accent-hover:   #063d0a;
+  --color-accent-fg:      #04510e;
+  --color-accent-fg-hover:#063d0a;
+  /* Light mode: solid green tint pill — fully opaque, readable on warm paper. */
+  --color-accent-soft:    #dcfce7;
+  --color-accent-ring:    #04510e33;
+
+  /* Display-only accent — CvSU brand green for italic display type.
+     Used via .display-accent / .dark .display-accent; always on light copy. */
+  --color-accent-display: #04510e;
+  --color-accent-display-dark: #0b7a1a;
+
+  /* CvSU brand gold — desaturated ochre for specimen-tag accents. */
+  --color-gold:           #f4b230;
+
+  /* Tidewater — quiet secondary accent for diagrams and SVG motifs. */
+  --color-tidewater:      #3a7878;
+
+  /* Feedback */
+  --color-success:        #15803d;
+  --color-warning:        #b45309;
+  --color-error:          #dc2626;
+  --color-info:           #2563eb;
+
+  /* Rarity tiers (used by achievement cards + sidebar rank accents) */
+  --color-rarity-common:    #a1a1aa;
+  --color-rarity-uncommon:  #22c55e;
+  --color-rarity-rare:      #60a5fa;
+  --color-rarity-epic:      #c084fc;
+  --color-rarity-legendary: #fbbf24;
+
+  /* Z-index scale — consumed as z-[var(--z-…)] */
+  --z-base:     0;
+  --z-raised:   10;
+  --z-sticky:   20;
+  --z-hud:      30;
+  --z-dropdown: 40;
+  --z-overlay:  50;
+  --z-modal:    60;
+  --z-toast:    70;
+  --z-tooltip:  80;
+  --z-debug:    9999;
+}
+
+.dark {
+  --color-bg:             #0a0a0a;
+  --color-surface:        #111111;
+  --color-surface-2:      #1a1a1a;
+  --color-surface-3:      #222222;
+  --color-border:         #1a1a1a;
+  --color-border-strong:  #2a2a2a;
+  --color-tertiary:       #6b7c7c;  /* lighter in dark mode for readability */
+
+  --color-fg:             #f0f0f0;
+  --color-fg-muted:       #a0a0a0;
+  --color-fg-subtle:      #6b6b6b;
+
+  --color-primary:        #04510e
+  --color-accent:         #16a34a;
+  --color-accent-hover:   #15803d;
+  --color-accent-fg:      #16a34a;
+  --color-accent-fg-hover:#15803d;
+
+  /* FIXED: was #052e16 (solid dark — 1.2:1 against #111111, invisible).
+     Now a semi-transparent tint: readable green wash on dark surfaces.
+     The leaderboard "you" row and status filter chips use this as background.
+     rgba() preferred over 8-digit hex for broader reader compatibility. */
+  --color-accent-soft:    rgba(20, 83, 45, 0.28);
+
+  /* Ring tracks accent colour so focus indicators remain visible in dark mode. */
+  --color-accent-ring:    rgba(22, 163, 74, 0.25);
+
+  --color-success:        #22c55e;
+  --color-warning:        #f59e0b;
+  --color-error:          #f87171;
+  --color-info:           #60a5fa;
+}
+
+/* Font role tokens — consumed by font utility classes below.
+   Kept outside @theme so Tailwind v4 doesn't auto-generate conflicting utilities. */
+:root {
+  --font-display: 'Outfit', sans-serif;
+  --font-reading: 'Outfit', sans-serif;
+  --font-ui:      'Outfit', sans-serif;
+
+  /* ── Shell layout tokens (additive — do not change existing tokens above) ──
+     Consumed exclusively by DashboardNavbar and StudentDashboard.
+     Named with the --shell- prefix so they are clearly scoped to the shell
+     and won't collide with any existing token in the project. */
+
+  /* Rail height — slimmer than previous 62px */
+  --shell-rail-h: 56px;
+
+  /* Sidebar widths */
+  --shell-sidebar-w:           232px;
+  --shell-sidebar-w-collapsed: 64px;
+
+  /* Shell-specific surfaces so the shell stops hard-coding hex literals.
+     Both light and dark values are declared; dark overrides are in .dark. */
+  --color-shell-sidebar:          var(--color-bg);
+  --color-shell-sidebar-fg:       var(--color-fg);
+  --color-shell-sidebar-fg-muted: var(--color-fg-muted);
+  --color-shell-sidebar-active:   var(--color-accent);
+  /* Cascades the fixed dark accent-soft automatically in dark mode. */
+  --color-shell-sidebar-active-soft: var(--color-accent-soft);
+
+  /* XP gamification tokens */
+  --color-xp:      #3b82f6;
+  --color-xp-soft: #dbeafe;
+
+  /* Hairline separator — matches landing-page rgba hairline treatment */
+  --color-hairline:          rgba(26, 20, 16, 0.13);
+
+  /* Rail shares the paper canvas with the sidebar */
+  --color-shell-rail:        var(--color-bg);
+  --color-shell-rail-border: var(--color-border);
+
+  /* Streak flame — orange-red, distinct from --color-warning (amber) */
+  --color-flame: #c2410c;
+
+  /* PracticeConsole caption — the small label text sitting on the ink-dark
+     console panel. Must be warm/light in light mode and cool/light in dark.
+     Using a token avoids the rgba(247,243,234,0.45) hex literal in JSX
+     that would silently break if --color-bg ever changed. */
+  --color-console-caption: rgba(247, 243, 234, 0.45);
+
+  /* ── Editorial / manuscript tokens (Courses + CourseDetails pages) ── */
+  --color-paper-warm:  #faf7f1;   /* slight cream tint, warmer than --color-surface */
+  --rule-strong-width: 1.5px;     /* rule under page headlines */
+  --tracking-eyebrow:  0.14em;    /* letter-spacing for small-caps labels */
+}
+
+/* Dark overrides for the shell-specific surface tokens */
+.dark {
+  --color-xp-soft:    #1e3a8a33;
+  --color-flame:      #ea580c;
+  --color-hairline:   rgba(255, 255, 255, 0.10);
+
+  /* On the ink-dark console panel (#0a0a0a bg in dark mode), the caption
+     needs to be a muted light rather than a muted warm-paper tint. */
+  --color-console-caption: rgba(240, 240, 240, 0.38);
+
+  --color-paper-warm: #14110d;  /* dark-mode warm paper inverse */
+}
+
+/* Global styles */
+body {
+  font-family: var(--font-ui);
+}
+
+/* Root canvas — warm paper in light mode, deep ink in dark. */
+html {
+  background-color: #f7f3ea;
+}
+html.dark {
+  background-color: #0a0a0a;
+}
+
+/* Enable class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+/* ── Landing page keyframes (moved from inline <style> in LandingPage.jsx) ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50%       { transform: translateY(-12px) rotate(0.4deg); }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50%       { transform: translateY(6px); opacity: 1; }
+}
+
+.anim-fade-up  { animation: fadeUp 0.7s ease both; }
+.anim-float    { animation: float 5s ease-in-out infinite; }
+.scroll-bounce { animation: scrollBounce 1.8s ease-in-out infinite; }
+
+/* ── Dashboard navbar keyframes (lifted from inline <style> in DashboardNavbar.jsx) ── */
+@keyframes dropdown-in {
+  from { opacity: 0; transform: scale(0.95) translateY(-6px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+@keyframes icon-swap {
+  from { transform: rotate(-20deg) scale(0.6); opacity: 0; }
+  to   { transform: rotate(0deg)   scale(1);   opacity: 1; }
+}
+
+.anim-dropdown { animation: dropdown-in 0.18s cubic-bezier(0.34,1.56,0.64,1) both; }
+.anim-icon     { animation: icon-swap   0.25s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* Decorative landing-page scale background — subtle in light, boosted in dark. */
+.lp-scale { color: var(--color-fg); opacity: 0.04; transition: opacity 180ms ease-in-out; }
+.dark .lp-scale { opacity: 0.07; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up, .anim-float, .scroll-bounce,
+  .anim-dropdown, .anim-icon {
+    animation: none !important;
+  }
+}
+
+/* ── Profile keyframes ── */
+@keyframes borderSpin {
+  to { transform: rotate(1turn); }
+}
+@keyframes levelPillIn {
+  from { opacity: 0; transform: translateX(-50%) scale(0.7); }
+  to   { opacity: 1; transform: translateX(-50%) scale(1); }
+}
+@keyframes profileTabFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes legendary-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(245,158,11,0.45),
+      0 0 28px rgba(245,158,11,0.20),
+      0 4px 16px rgba(245,158,11,0.14);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1.5px rgba(245,158,11,0.75),
+      0 0 48px rgba(245,158,11,0.36),
+      0 4px 28px rgba(245,158,11,0.24);
+  }
+}
+@keyframes epic-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px rgba(139,92,246,0.40),
+      0 0 18px rgba(139,92,246,0.14);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1.5px rgba(139,92,246,0.68),
+      0 0 34px rgba(139,92,246,0.28);
+  }
+}
+.legendary-card { animation: legendary-glow 2.5s ease-in-out infinite; }
+.epic-card      { animation: epic-glow      3.5s ease-in-out infinite; }
+.locked-card-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    rgba(0,0,0,0.03) 6px,
+    rgba(0,0,0,0.03) 12px
+  );
+}
+.dark .locked-card-bg {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    rgba(255,255,255,0.025) 6px,
+    rgba(255,255,255,0.025) 12px
+  );
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.animate-shake {
+  animation: shake 0.2s ease-in-out 0s 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .legendary-card, .epic-card { animation: none !important; }
+}
+
+.font-outfit {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.font-outfit-bold {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-outfit-italic {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+}
+
+.font-outfit-wordmark {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0em;
+}
+
+.font-reading {
+  font-family: var(--font-reading);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* Naked text-link hover — picks up the brand green.
+   Dark mode uses --color-accent-display-dark which is set against light
+   copy, so it remains legible even at the smaller --color-fg opacity range. */
+.link-accent {
+  transition: color 200ms ease;
+}
+.link-accent:hover { color: var(--color-accent-fg); }
+.dark .link-accent:hover { color: var(--color-accent-display-dark); }
+
+/* Field Journal canvas — warm paper in light mode, deep ink in dark. */
+.paper {
+  background-color: #f7f3ea;
+}
+.dark .paper {
+  background-color: #0a0a0a;
+}
+
+/* Ink colors — warm ink family matching the field-journal palette. */
+.ink            { color: #1a1410; }
+.dark .ink      { color: #f0f0f0; }
+.ink-muted      { color: #5a4a3a; }
+.dark .ink-muted{ color: #a0a0a0; }
+.ink-faint      { color: #776656; }
+.dark .ink-faint{ color: #6b6b6b; }
+.display-accent      { color: var(--color-accent-display); }
+.dark .display-accent{ color: var(--color-accent-display-dark); }
+.hairline       { border-color: rgba(26, 20, 16, 0.13); }
+.dark .hairline { border-color: rgba(255, 255, 255, 0.10); }
+
+/* Dotted leader — a heading + dots + page-style number on the right */
+.leader-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+}
+.leader-row .leader-dots {
+  flex: 1;
+  border-bottom: 1.5px dotted currentColor;
+  opacity: 0.35;
+  transform: translateY(-4px);
+}
+
+/* Primary CTA — warm ink fill, green on hover */
+.primary-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.25rem 0.95rem 1.5rem;
+  background-color: #1a1410;
+  color: #f7f3ea;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.primary-cta:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+.dark .primary-cta {
+  background-color: #e8e8e8;
+  color: #111111;
+}
+.dark .primary-cta:hover {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+/* GSAP & hover lift utilities */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+.nav-slide {
+  transition: transform 0.2s ease;
+}
+
+/* ── Scrollbar hide utility ──────────────────────────────────────────────
+   Used by FsmStepMap's overflow-x-auto container to suppress the visible
+   scrollbar chrome on Windows/Chrome while preserving scroll behaviour.
+   Without this, Chrome on Windows renders a visible scrollbar inside the
+   card when the step pills overflow — jarring in an otherwise clean surface.
+
+   Usage: add className="scrollbar-hide" alongside overflow-x-auto.
+   The scroll behaviour is preserved; only the visible track/thumb is hidden. */
+.scrollbar-hide {
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE / Edge legacy */
+  -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  /* Chrome / Safari / Edge Chromium */
+  display: none;
+}
+
+/* Ensure progress bar transitions smoothly */
+.progress-bar-transition {
+  transition: width 0.15s linear;
+}
+
+/* File: index.css – Add pattern opacity class for auth pages */
+.auth-scale-pattern {
+  opacity: 0.03;
+}
+.dark .auth-scale-pattern {
+  opacity: 0.02;
+}
+
+/* ── Notification panel secondary actions (Mark all read) – higher contrast
+     Uses --color-fg-subtle in light mode, --color-fg-muted in dark mode */
+.notif-secondary-action {
+  color: var(--color-fg-subtle);
+}
+.dark .notif-secondary-action {
+  color: var(--color-fg-muted);
+}
+
+/* ── Notification panel mobile overflow guard ────────────────────────────
+   Prevents the 340px dropdown from clipping the viewport on narrow screens
+   where right-0 + w-[340px] would extend beyond the right edge. */
+.notif-panel {
+  max-width: calc(100vw - 1rem);
+}
+
+/* ── Inter / Google-Classroom-like font stack ────────────────────────────
+   Used exclusively inside student Courses.jsx and CourseDetails.jsx via
+   opt-in utility classes below. Body and the dashboard shell remain on
+   Outfit (--font-ui). These utilities MUST NOT be applied to shell files.
+   Kept outside @theme for the same reason as --font-display (see L169). */
+:root {
+  --font-classroom: 'Inter', system-ui, sans-serif;
+}
+
+/* Body/UI copy — Inter with micro-optical features enabled. */
+.font-classroom {
+  font-family: var(--font-classroom);
+  font-feature-settings: 'cv11', 'ss01';
+  letter-spacing: -0.011em;
+}
+
+/* Display / headings — tighter tracking, semi-bold implied by usage context. */
+.font-classroom-display {
+  font-family: var(--font-classroom);
+  font-weight: 600;
+  font-feature-settings: 'cv11', 'ss01';
+  letter-spacing: -0.025em;
+}
+
+/* Numeric data — tabular figures so columns align cleanly. */
+.font-classroom-num {
+  font-family: var(--font-classroom);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum', 'cv11';
+  letter-spacing: -0.01em;
+}
+
+/* ── Editorial manuscript utilities ─────────────────────────────────────
+   Used only by Courses.jsx and CourseDetails.jsx. Intentionally narrow
+   — each utility has one clear job and routes through CSS tokens. */
+
+/* Small-caps section label above headings (e.g. "STUDENT · ENROLLMENT") */
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-eyebrow);
+  color: var(--color-fg-subtle);
+  font-family: var(--font-classroom);
+  font-weight: 500;
+}
+.dark .eyebrow { color: var(--color-fg-subtle); }
+
+/* 1.5px solid rule — used once per page, directly under the display headline */
+.rule-strong {
+  border-top: var(--rule-strong-width) solid var(--color-fg);
+}
+.dark .rule-strong { border-top-color: var(--color-fg); }
+
+/* Warm cream canvas — editorial page feel, slightly warmer than --color-surface */
+.paper-warm {
+  background-color: var(--color-paper-warm);
+}
+.dark .paper-warm { background-color: var(--color-paper-warm); }
+
+/* Top-rail search bar */
+.rail-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-hairline);
+  font-size: 12.5px;
+  color: var(--color-fg-subtle);
+  min-width: 220px;
+  cursor: default;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+.rail-search:hover {
+  border-color: var(--color-border-strong);
+  color: var(--color-fg-muted);
+}
+.rail-search .rail-kbd {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--color-fg-subtle);
+  border: 1px solid var(--color-hairline);
+  padding: 1px 5px;
+  font-family: var(--font-ui);
+}
+
+/* Tabular-nums utility */
+.font-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+}
+
+/* ── Large-screen responsive scaling (1440px+) ───────────────────────────────
+   Bumps sidebar width and text sizes for 1440px+ monitors where the fixed-px
+   values read too small relative to the viewport.                             */
+@media (min-width: 1440px) {
+  :root {
+    --shell-sidebar-w: 264px;
+  }
+
+  /* Nav links and logout button (override text-[13.5px] Tailwind utility) */
+  .sidebar-shell a,
+  .sidebar-shell button {
+    font-size: 15px;
+  }
+
+  /* Section group labels inside nav (override text-[10px]) */
+  .sidebar-shell nav p {
+    font-size: 12px;
+  }
+
+  /* Logo wordmark */
+  .sidebar-shell .font-outfit-wordmark {
+    font-size: 20px;
+  }
+
+  /* eyebrow labels used in hero cards */
+  .eyebrow {
+    font-size: 12px;
+  }
+}

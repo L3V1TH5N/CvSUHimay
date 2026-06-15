@@ -1,0 +1,831 @@
+/* File Path: CvSUHimayEditorial\web\src\pages\dashboards\student\Overview.css
+   Scope: StudentOverview page only (Overview.jsx).
+   All classes here are consumed exclusively by Overview.jsx and its
+   sub-components (HeroSimCompact, LearningPanel, GamRail).
+   Do NOT import this file from any other page or shell component. */
+
+/* ── Page header ─────────────────────────────────────────────────────────── */
+.ph {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: var(--rule-strong-width) solid var(--color-fg);
+  margin-bottom: 28px;
+}
+.ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+.ph-title .it {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+.ph-subtitle {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+/* Avatar + text row inside page header */
+.ph-inner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* ── Atelier two-column layout ───────────────────────────────────────────── */
+.atelier {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 36px;
+  align-items: start;
+}
+.atelier-rail {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-hairline); /* full box — all four sides */
+  padding: 0 20px;
+  background: var(--color-surface);
+}
+
+/* ── Rail blocks ─────────────────────────────────────────────────────────── */
+.rail-block {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.rail-block:first-child { padding-top: 18px; }  /* breathe from top border */
+.rail-block:last-child  { border-bottom: 0; }    /* container bottom border closes the box */
+.rail-block .label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+/* Clickable rail label — underline on hover, pointer cursor */
+.rail-block .label.label-link {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: color 140ms ease, text-decoration-color 140ms ease;
+}
+.rail-block .label.label-link:hover {
+  color: var(--color-fg);
+  text-decoration-color: var(--color-fg-muted);
+}
+.rail-block .display {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-fg);
+  letter-spacing: -0.035em;
+  line-height: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.rail-block .display .sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.rail-block .note {
+  font-size: 11.5px;
+  color: var(--color-fg-muted);
+  margin-top: 6px;
+  font-family: var(--font-reading);
+  line-height: 1.4;
+}
+
+/* Inner hairline dividing sub-sections within a single rail-block */
+.rail-inner-sep {
+  height: 1px;
+  background: var(--color-hairline);
+  margin: 14px 0;
+}
+
+/* Secondary heading inside a rail-block — same style as .label with top spacing */
+.rail-sub-label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* ── Hero / continue card ─────────────────────────────────────────────────── */
+.continue {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 0;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  position: relative;
+}
+.continue.solo { grid-template-columns: minmax(0, 1fr); }
+.continue-body { padding: 28px 30px 26px; }
+.continue-body .eyebrow {
+  font-family: var(--font-ui);
+  margin-bottom: 12px;
+}
+.continue-body h2 {
+  font-family: var(--font-ui);
+  font-size: 26px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: var(--color-fg);
+  margin-bottom: 8px;
+}
+.continue-body h2 .it {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+.continue-body .sub {
+  font-family: var(--font-ui);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--color-fg-muted);
+  max-width: 52ch;
+  margin-bottom: 22px;
+}
+.continue-body .meta-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  margin-bottom: 22px;
+}
+/* Hero top row — title group left, CTA button right */
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 24px 26px 0;
+  margin-bottom: 16px;
+}
+.continue .eyebrow {
+  font-family: var(--font-ui);
+  margin-bottom: 10px;
+}
+.continue h2 {
+  font-family: var(--font-ui);
+  font-size: 30px;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  color: var(--color-fg);
+}
+.continue h2 .it {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+/* Dark CTA button — top-right corner of hero */
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.hero-cta-btn:hover { background-color: var(--color-accent); color: #ffffff; }
+
+/* Description paragraph */
+.hero-desc {
+  padding: 0 26px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-bottom: 18px;
+}
+
+/* Course label above stats */
+.hero-course {
+  padding: 0 26px 16px;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* ── Next Up card ─────────────────────────────────────────────────────────── */
+.next-up-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 20px;
+  margin-top: 10px;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.next-up-card:hover {
+  border-color: var(--color-fg);
+  background: var(--color-surface-3);
+}
+.next-up-card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.next-up-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin-top: 3px;
+}
+.next-up-arrow {
+  color: var(--color-fg-muted);
+  flex-shrink: 0;
+}
+
+/* Empty state — replaces .run-stats when totalAttempts === 0 */
+.hero-empty-state {
+  padding: 18px 26px;
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 0;
+}
+.hero-empty-state p {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.5;
+}
+
+/* ── Run stats grid ──────────────────────────────────────────────────────── */
+.run-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 22px;
+}
+/* In hero card: stats flush to bottom, first/last stat padded to match card gutter */
+.continue .run-stats {
+  margin-bottom: 0;
+}
+.continue .run-stat:first-child  { padding-left: 26px; }
+.continue .run-stat:last-child   { padding-right: 26px; }
+.continue .run-stat-val          { font-size: 36px; }
+.run-stat {
+  padding: 14px 18px 14px 0;
+  border-right: 1px solid var(--color-hairline);
+  display: flex;
+  flex-direction: column;
+}
+.run-stat:nth-child(n+2) { padding-left: 18px; }
+.run-stat:last-child { border-right: 0; padding-right: 0; }
+.run-stat-label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.run-stat-val {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-fg);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.run-stat-val .sub {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-fg-subtle);
+}
+.run-stat-meta {
+  font-size: 11px;
+  color: var(--color-fg-muted);
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  font-variant-numeric: tabular-nums;
+}
+/* Trend delta badge — sits inline after the score number */
+.run-stat-delta {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-ui);
+  letter-spacing: 0;
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+/* ── Section head ────────────────────────────────────────────────────────── */
+.section-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.section-head h3 {
+  font-family: var(--font-ui);
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  white-space: nowrap;
+  position: relative;
+  padding-left: 12px;
+}
+.section-head h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 14px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+.section-head .rule {
+  flex: 1;
+  border-top: 1px solid var(--color-hairline);
+  transform: translateY(-4px);
+}
+/* Italic accent inside section heading */
+.section-head h3 .it {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+/* ── Learning progress grid ──────────────────────────────────────────────── */
+.learning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-top: 1px solid var(--color-hairline);
+  border-bottom: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+}
+.lp-panel {
+  padding: 22px 26px;
+  border-left: 1px solid var(--color-hairline);
+  border-right: 1px solid var(--color-hairline);
+  display: flex;
+  flex-direction: column;
+}
+.lp-panel:nth-child(2) {
+  border-left: 0;
+  border-right: 1px solid var(--color-hairline);
+}
+.lp-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.lp-label {
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+}
+.lp-counts {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+.lp-counts .lp-num {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-fg);
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.lp-counts .lp-of {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-fg-subtle);
+}
+
+/* ── Learning panel progress bar (panel-level) ───────────────────────────────
+   Was 2px — too thin to read at a glance. Now 6px with 3px border-radius.
+   The border-radius must be applied to BOTH the track (.lp-bar) and the fill
+   (.lp-bar > i). Without radius on the fill, the progress end cap is a flat
+   vertical cut sitting inside a rounded container — looks broken.            */
+.lp-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-surface-3);
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+/* Accent green fill (OPTION A: was var(--color-fg) warm ink) */
+.lp-bar > i {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  background: var(--color-accent);
+  border-radius: 3px; /* match track so rounded cap is preserved */
+}
+
+.lp-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--color-fg-muted);
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.lp-meta-sep {
+  width: 1px;
+  height: 10px;
+  background: var(--color-hairline);
+  flex-shrink: 0;
+}
+
+/* Learning panel footer CTA — full-width, pinned to panel bottom */
+.lp-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;
+  padding: 14px 0 0;
+  border: none;
+  border-top: 1px solid var(--color-hairline);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  transition: color 160ms ease, border-top-color 160ms ease;
+}
+.lp-cta:hover {
+  color: var(--color-fg);
+  border-top-color: var(--color-fg);
+}
+.lp-cta svg {
+  transition: transform 160ms ease;
+}
+.lp-cta:hover svg { transform: translateX(4px); }
+
+/* LearningPanel item rows */
+.lp-items {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.lp-item { display: flex; flex-direction: column; gap: 6px; }
+/* Clickable row — divider + hover tint */
+.lp-item-clickable {
+  cursor: pointer;
+  padding: 9px 8px;
+  margin: 0 -8px;
+  border-radius: 2px;
+  border-bottom: 1px solid var(--color-hairline);
+  transition: background-color 120ms ease;
+}
+.lp-item-clickable:last-child { border-bottom: none; }
+.lp-item-clickable:hover {
+  background: var(--color-surface-3);
+}
+.lp-item-clickable:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.lp-item-head {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px; align-items: baseline;
+}
+.lp-item-code {
+  font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--color-fg-subtle); font-weight: 500;
+}
+.lp-item-title {
+  font-size: 13px; color: var(--color-fg); font-weight: 500;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.lp-item-score {
+  font-family: var(--font-display);
+  font-size: 14px; font-weight: 700; color: var(--color-fg);
+  font-variant-numeric: tabular-nums; letter-spacing: -0.01em;
+}
+.lp-item-due {
+  font-size: 10px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--color-accent); font-weight: 600;
+}
+
+/* ── Status indicator dot in the code column (OPTION A) ──────────────────────
+   Replaces the empty lp-item-code slot for done/passed rows.                 */
+.lp-item-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  top: -1px; /* optical cap-height alignment */
+}
+.lp-item-dot--done { background: var(--color-accent); }
+
+/* ── Due quiz row background tint (OPTION A) ─────────────────────────────── */
+.lp-item--due {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: -6px;
+  margin-right: -6px;
+  background: color-mix(in srgb, var(--color-accent) 6%, transparent);
+}
+
+/* ── XP bar ──────────────────────────────────────────────────────────────────
+   Matched to .lp-bar at 6px so the standing-section XP bar reads with the
+   same visual weight as the learning-panel bars. Same border-radius rule
+   applies — both track and fill get radius: 3px.                              */
+.xp-bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-surface-3);
+  margin-top: 12px;
+  position: relative;
+}
+.xp-bar > i {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  background: var(--color-accent);
+  border-radius: 3px;
+}
+.xp-bar-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 10.5px;
+  color: var(--color-fg-subtle);
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Achievement list ────────────────────────────────────────────────────── */
+.achv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 4px;
+}
+
+/* Achievement row — divider between rows via border-bottom */
+.achv {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.achv:last-child { border-bottom: none; }
+
+/* ── Rarity-tinted achievement row (OPTION C extension) ──────────────────────
+   Previously only the medal circle had a rarity backing. The full row now gets
+   a matching tint + left border so the rarity tier reads at row level, not just
+   at the icon level. This makes the rail feel like a genuine game reward log.
+
+   Bleed technique: .atelier-rail has padding: 0 20px. Negative margins pull
+   the row background flush to the rail box edges so it reads as a band rather
+   than a floating pill. Padding restores interior alignment:
+     padding-left: 18px = 20px rail padding − 2px left border
+     padding-right: 12px = comfortable right breathing room
+
+   The background and border-left color are both dynamic (per rarity), so they
+   are applied via inline style in JSX (background, borderLeftColor).
+   This class handles only the structural/spacing concerns.                    */
+.achv--colored {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 7px 12px 7px 18px;
+  border-left: 2px solid transparent; /* actual color set in JSX via borderLeftColor */
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Achievement medal circle (OPTION C) ─────────────────────────────────────
+   34px circle. Background (rarity tint at 16% opacity) set inline in JSX.
+   Glow rings added for legendary and epic only via the classes below.         */
+.achv-medal {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* Two-layer box-shadow: inner gap ring (matches surface) + outer rarity ring */
+.achv-medal-glow-legendary {
+  box-shadow:
+    0 0 0 1.5px var(--color-surface),
+    0 0 0 3px var(--color-rarity-legendary);
+}
+.achv-medal-glow-epic {
+  box-shadow:
+    0 0 0 1.5px var(--color-surface),
+    0 0 0 3px var(--color-rarity-epic);
+}
+/* Dark mode: gap ring must reference dark surface token */
+.dark .achv-medal-glow-legendary {
+  box-shadow:
+    0 0 0 1.5px var(--color-surface),
+    0 0 0 3px var(--color-rarity-legendary);
+}
+.dark .achv-medal-glow-epic {
+  box-shadow:
+    0 0 0 1.5px var(--color-surface),
+    0 0 0 3px var(--color-rarity-epic);
+}
+
+.achv-body { flex: 1; min-width: 0; }
+.achv-body .nm {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--color-fg);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.achv-body .when {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  margin-top: 2px;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+/* ── Leaderboard mini list ───────────────────────────────────────────────── */
+.lb-mini {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 6px;
+}
+.lb-row {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 12.5px;
+  padding: 4px 0;
+  color: var(--color-fg-muted);
+}
+.lb-row .rank {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--color-fg-subtle);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.lb-row .nm {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lb-row .xp {
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-fg-subtle);
+  font-weight: 500;
+}
+
+/* ── Current-user ("me") leaderboard row highlight ──────────────────────────
+   Full-bleed tint so the background reads edge-to-edge within the rail box.
+   Padding math: left 20px restores rail gutter; right 8px breathing room.    */
+.lb-row.me {
+  color: var(--color-accent);
+  font-weight: 500;
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 5px 8px 5px 20px;
+  border-radius: 2px;
+}
+.lb-row.me .rank { color: var(--color-accent); }
+.lb-row.me .xp   { color: var(--color-accent); }
+
+/* ── Responsive: single-column below 900px ───────────────────────────────── */
+@media (max-width: 900px) {
+  .atelier {
+    grid-template-columns: 1fr;
+  }
+  .atelier-rail {
+    width: 100%;
+  }
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+  .lp-panel:nth-child(2) {
+    border-left: 1px solid var(--color-hairline);
+    border-top: 1px solid var(--color-hairline);
+  }
+  .run-stats {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  /* Page header */
+  .ph-title          { font-size: 44px; }
+  .ph-subtitle       { font-size: 15px; }
+
+  /* Hero card */
+  .continue h2       { font-size: 36px; }
+  .hero-desc         { font-size: 15.5px; }
+  .hero-course       { font-size: 11.5px; }
+  .hero-cta-btn      { font-size: 12px; padding: 14px 24px; }
+
+  /* Run stats */
+  .run-stat-val                 { font-size: 32px; }
+  .continue .run-stat-val       { font-size: 44px; }
+  .run-stat-label               { font-size: 11.5px; }
+  .run-stat-meta                { font-size: 12.5px; }
+
+  /* Next Up card */
+  .next-up-title     { font-size: 15.5px; }
+
+  /* Section heading */
+  .section-head h3   { font-size: 26px; }
+
+  /* Learning panels */
+  .lp-label          { font-size: 12px; }
+  .lp-counts .lp-num { font-size: 34px; }
+  .lp-counts .lp-of  { font-size: 13px; }
+  .lp-meta           { font-size: 12.5px; }
+  .lp-item-title     { font-size: 15px; }
+  .lp-item-score     { font-size: 16px; }
+  .lp-item-code      { font-size: 11.5px; }
+  .lp-cta            { font-size: 12px; }
+
+  /* Gamification rail */
+  .rail-block .label    { font-size: 11.5px; }
+  .rail-sub-label       { font-size: 11.5px; }
+  .rail-block .display  { font-size: 36px; }
+  .rail-block .display .sub { font-size: 13px; }
+  .rail-block .note     { font-size: 13px; }
+  .xp-bar-meta          { font-size: 12px; }
+
+  /* Leaderboard mini */
+  .lb-row            { font-size: 14.5px; }
+  .lb-row .rank      { font-size: 11.5px; }
+  .lb-row .xp        { font-size: 13px; }
+
+  /* Achievement list */
+  .achv-body .nm     { font-size: 14.5px; }
+  .achv-body .when   { font-size: 12.5px; }
+
+  /* Rail width — more breathing room for the scaled text */
+  .atelier {
+    grid-template-columns: minmax(0, 1fr) 320px;
+  }
+}

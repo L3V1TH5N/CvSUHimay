@@ -1,0 +1,420 @@
+/* File path: web/src/pages/dashboards/student/Leaderboard.css
+   Scope: Leaderboard.jsx only. Do NOT import elsewhere. */
+
+/* ── Page header ──────────────────────────────────────────────────────────── */
+.lb-ph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 16px;
+  border-bottom: var(--rule-strong-width) solid var(--color-fg);
+  margin-bottom: 28px;
+}
+.lb-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+.lb-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+.lb-ph-sub {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-top: 7px;
+}
+
+/* ── Personal stats bar ───────────────────────────────────────────────────── */
+.lb-you-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  margin-bottom: 20px;
+}
+.lb-you-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.lb-you-rank {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+}
+.lb-you-note {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+.lb-you-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.lb-you-xp-rank {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+}
+.lb-you-xp {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-ui);
+}
+.lb-you-to-next {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Filter rail — matches Modules page pill pattern exactly ──────────────── */
+.lb-filter-rail {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid var(--color-hairline);
+  width: fit-content;
+}
+.lb-filter-pill {
+  padding: 8px 16px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  border-right: 1px solid var(--color-hairline);
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.lb-filter-pill:last-child { border-right: 0; }
+.lb-filter-pill:hover { background: var(--color-surface-3); color: var(--color-fg); }
+.lb-filter-pill.active { background: var(--color-fg); color: var(--color-bg); }
+
+/* ── Search ───────────────────────────────────────────────────────────────── */
+.lb-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.lb-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-fg-subtle);
+  pointer-events: none;
+}
+.lb-search {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px 9px 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg);
+  font-size: 13px;
+  font-family: var(--font-ui);
+  outline: none;
+  transition: border-color 120ms ease;
+}
+.lb-search:focus { border-color: var(--color-fg-muted); }
+.lb-search::placeholder { color: var(--color-fg-subtle); }
+
+.lb-refresh-btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease, background-color 120ms ease;
+}
+.lb-refresh-btn:hover {
+  border-color: var(--color-fg-muted);
+  color: var(--color-fg);
+  background: var(--color-surface-2);
+}
+.lb-refresh-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Board container ──────────────────────────────────────────────────────── */
+.lb-board {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+/* ── Top-3 card block ─────────────────────────────────────────────────────── */
+.lb-top3 {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lb-row-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-hairline);
+  cursor: pointer;
+  transition: border-color 120ms ease;
+}
+.lb-row-top:hover { border-color: var(--color-fg-muted); }
+.lb-row-top--you {
+  border-color: var(--color-accent) !important;
+  background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
+}
+
+/* ── Divider between top-3 and rest ──────────────────────────────────────── */
+.lb-divider {
+  border-top: 1px solid var(--color-hairline);
+  margin: 0 12px;
+}
+
+/* ── Compact rows (rank 4+) ───────────────────────────────────────────────── */
+.lb-rest {
+  padding: 0 12px 12px;
+}
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 8px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-hairline);
+  transition: background-color 100ms ease;
+}
+.lb-row:hover:not(.lb-row--you) { background: var(--color-surface-2); }
+.lb-row--you {
+  background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
+}
+
+/* ── Name + score ─────────────────────────────────────────────────────────── */
+.lb-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lb-name--top {
+  font-size: 14px;
+  font-weight: 600;
+}
+.lb-name--you { color: var(--color-accent); }
+.lb-score {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.lb-score-sm {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  font-family: var(--font-display);
+}
+
+/* ── Rank badge (number or medal emoji) ───────────────────────────────────── */
+.lb-rank-medal {
+  width: 28px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.lb-rank-num {
+  width: 28px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-fg-subtle);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  font-family: var(--font-ui);
+}
+
+/* ── "You" chip ───────────────────────────────────────────────────────────── */
+.lb-you-chip {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--color-accent);
+  color: #ffffff;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  font-family: var(--font-ui);
+}
+
+/* ── XP rank chip ─────────────────────────────────────────────────────────── */
+.lb-rank-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg-subtle);
+  background: var(--color-surface-2);
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+/* ── Attempt count (quiz tab) ─────────────────────────────────────────────── */
+.lb-attempt-count {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  margin-top: 2px;
+}
+
+/* ── Pinned user separator ────────────────────────────────────────────────── */
+.lb-pin-sep {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+.lb-pin-sep-line {
+  flex: 1;
+  border-top: 1px dashed var(--color-hairline);
+}
+.lb-pin-sep-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+}
+
+/* ── Skeleton ─────────────────────────────────────────────────────────────── */
+.lb-skeleton {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lb-skeleton-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  animation: lb-pulse 1.5s ease-in-out infinite;
+}
+@keyframes lb-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+.lb-skeleton-box { background: var(--color-surface-3); }
+
+/* ── Error / empty / no-match states ─────────────────────────────────────── */
+.lb-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 24px;
+  text-align: center;
+}
+.lb-state-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-hairline);
+  margin-bottom: 14px;
+}
+.lb-state-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-bottom: 6px;
+}
+.lb-state-sub {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  line-height: 1.5;
+}
+.lb-retry-btn {
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+}
+.lb-no-match {
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 13px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+.lb-nudge {
+  text-align: center;
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  padding: 12px 8px 4px;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .lb-ph-title { font-size: 28px; }
+}
+@media (max-width: 640px) {
+  .lb-you-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .lb-you-xp-rank { display: none; }
+  .lb-you-to-next { display: none; }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .lb-ph-title { font-size: 44px; }
+  .lb-ph-sub   { font-size: 15px; }
+  .lb-score    { font-size: 24px; }
+  .lb-filter-pill { font-size: 11px; }
+  .lb-name     { font-size: 15px; }
+  .lb-name--top { font-size: 16px; }
+}

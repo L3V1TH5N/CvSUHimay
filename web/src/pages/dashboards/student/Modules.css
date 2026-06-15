@@ -1,0 +1,382 @@
+/* File path: web/src/pages/dashboards/student/Modules.css
+   Scope: Modules.jsx only. Do NOT import elsewhere. */
+
+/* ── Page header ──────────────────────────────────────────────────────────── */
+.mod-ph {
+  padding-bottom: 16px;
+  border-bottom: var(--rule-strong-width) solid var(--color-fg);
+  margin-bottom: 28px;
+}
+.mod-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+.mod-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+.mod-ph-sub {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+}
+.mod-ph-sub .sep {
+  width: 1px;
+  height: 11px;
+  background: var(--color-hairline);
+  flex-shrink: 0;
+}
+.mod-ph-xp {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* ── Overall progress bar ─────────────────────────────────────────────────── */
+.mod-overall-bar {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--color-surface-3);
+  margin-top: 14px;
+  position: relative;
+}
+.mod-overall-bar > i {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  border-radius: 2px;
+  background: var(--color-accent);
+  transition: width 600ms ease;
+}
+
+/* ── Filter rail ──────────────────────────────────────────────────────────── */
+.mod-filter-rail {
+  display: flex;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-hairline);
+  width: fit-content;
+}
+.mod-filter-pill {
+  padding: 8px 16px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: none;
+  border-right: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.mod-filter-pill:last-child { border-right: 0; }
+.mod-filter-pill:hover { background: var(--color-surface-3); color: var(--color-fg); }
+.mod-filter-pill.active { background: var(--color-fg); color: var(--color-bg); }
+
+/* ── Module grid ──────────────────────────────────────────────────────────── */
+.mod-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+/* ── Module card ──────────────────────────────────────────────────────────── */
+.mod-card {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  padding: 22px 24px 18px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+.mod-card:hover { background: var(--color-surface-3); border-color: var(--color-fg-muted); }
+.mod-card:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+
+/* ── Card top: number + status ───────────────────────────────────────────── */
+.mod-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.mod-card-num {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  font-weight: 500;
+}
+.mod-card-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mod-status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.mod-status-dot--done     { background: var(--color-accent); }
+.mod-status-dot--progress { background: color-mix(in srgb, var(--color-accent) 55%, transparent); }
+.mod-status-dot--none     { background: var(--color-fg-subtle); opacity: 0.4; }
+.mod-status-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--font-ui);
+}
+.mod-status-label--done     { color: var(--color-accent); }
+.mod-status-label--progress { color: var(--color-fg-muted); }
+.mod-status-label--none     { color: var(--color-fg-subtle); }
+
+/* ── Card title + description ────────────────────────────────────────────── */
+.mod-card-title {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-fg);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  margin-bottom: 7px;
+}
+.mod-card-desc {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── Meta tags ───────────────────────────────────────────────────────────── */
+.mod-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 16px;
+  margin-top: auto;
+}
+.mod-card-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  font-family: var(--font-ui);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg-muted);
+  background: transparent;
+}
+
+/* ── Card footer: progress bar + CTA ────────────────────────────────────── */
+.mod-card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-hairline);
+  margin-top: auto;
+}
+.mod-card-bar {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-surface-3);
+  position: relative;
+  overflow: hidden;
+}
+.mod-card-bar > i {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  border-radius: 2px;
+  background: var(--color-accent);
+  transition: width 500ms ease;
+}
+.mod-card-pct {
+  font-size: 10px;
+  color: var(--color-fg-subtle);
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.mod-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+  transition: color 120ms ease;
+}
+.mod-card:hover .mod-card-cta { color: var(--color-fg); }
+.mod-card-cta svg { transition: transform 120ms ease; }
+.mod-card:hover .mod-card-cta svg { transform: translateX(3px); }
+
+/* ── Expand overlay CTA button ───────────────────────────────────────────── */
+.mod-expand-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 22px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--font-ui);
+  transition: background-color 250ms ease, color 250ms ease;
+}
+.mod-expand-cta:hover { background-color: var(--color-accent); color: #ffffff; }
+.mod-expand-cta svg { transition: transform 140ms ease; }
+.mod-expand-cta:hover svg { transform: translateX(4px); }
+
+/* ── Skeleton ────────────────────────────────────────────────────────────── */
+.mod-skeleton {
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  padding: 22px 24px;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: mod-pulse 1.5s ease-in-out infinite;
+}
+@keyframes mod-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+.mod-skeleton-line {
+  background: var(--color-surface-3);
+  border-radius: 1px;
+}
+
+/* ── Empty state ─────────────────────────────────────────────────────────── */
+.mod-empty {
+  grid-column: 1 / -1;
+  padding: 48px 24px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  letter-spacing: 0.06em;
+}
+
+/* ── Error banner ────────────────────────────────────────────────────────── */
+.mod-error {
+  margin-bottom: 20px;
+  padding: 14px 18px;
+  border: 1px solid color-mix(in srgb, var(--color-error, #dc2626) 40%, transparent);
+  background: color-mix(in srgb, var(--color-error, #dc2626) 6%, transparent);
+  font-size: 13px;
+  color: var(--color-error, #dc2626);
+  font-family: var(--font-ui);
+}
+.mod-error button {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  margin-left: 4px;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .mod-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .mod-grid { grid-template-columns: 1fr; }
+  .mod-ph-title { font-size: 28px; }
+  .mod-filter-rail { flex-wrap: wrap; width: 100%; }
+  .mod-filter-pill { flex: 1; text-align: center; }
+}
+
+/* ── Expand modal internals ──────────────────────────────────────────────── */
+.mod-modal-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.mod-modal-title {
+  font-family: var(--font-ui);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  line-height: 1.3;
+}
+.mod-modal-desc {
+  font-size: 13.5px;
+  color: var(--color-fg-muted);
+  line-height: 1.6;
+  font-family: var(--font-ui);
+}
+.mod-modal-contents-label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-fg-subtle);
+  margin-bottom: 12px;
+  font-family: var(--font-ui);
+}
+.mod-modal-section-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-hairline);
+}
+.mod-modal-section-num {
+  font-size: 10px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: right;
+}
+.mod-modal-section-label {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  flex: 1;
+  line-height: 1.4;
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .mod-ph-title            { font-size: 44px; }
+  .mod-ph-sub              { font-size: 15px; }
+  .mod-card-title          { font-size: 18px; }
+  .mod-card-desc           { font-size: 15px; }
+  .mod-modal-title         { font-size: 21px; }
+  .mod-modal-desc          { font-size: 15px; }
+  .mod-modal-section-label { font-size: 15px; }
+}

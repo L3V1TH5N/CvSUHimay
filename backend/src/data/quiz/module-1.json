@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "question": "What type of fatty acids are found in fish oils that are linked to low incidence of coronary heart disease?",
+    "option_a": "Omega-6 polyunsaturated fatty acids",
+    "option_b": "Omega-3 polyunsaturated fatty acids",
+    "option_c": "Saturated fatty acids",
+    "option_d": "Monounsaturated fatty acids",
+    "correct_answer": "B",
+    "explanation": "Fish oils contain unique omega-3 type polyunsaturated fatty acids (PUFA) not found in significant quantities in other common foods."
+  },
+  {
+    "id": 2,
+    "question": "What percentage of a bony fish's whole weight is typically edible?",
+    "option_a": "40%",
+    "option_b": "50%",
+    "option_c": "60%",
+    "option_d": "70%",
+    "correct_answer": "C",
+    "explanation": "The edible portion of a bony fish is about 60% of its whole weight, depending on anatomy and biological variables."
+  },
+  {
+    "id": 3,
+    "question": "What are myotomes in fish muscle structure?",
+    "option_a": "Connective tissue sheets",
+    "option_b": "Layers of muscle cells",
+    "option_c": "Blood vessels",
+    "option_d": "Nerve fibers",
+    "correct_answer": "B",
+    "explanation": "Myotomes are layers of muscle cells in fish arranged between sheets of connective tissue (myocommata)."
+  },
+  {
+    "id": 4,
+    "question": "What percentage of fish muscle is typically white (light) muscle?",
+    "option_a": "50%",
+    "option_b": "70%",
+    "option_c": "90%",
+    "option_d": "100%",
+    "correct_answer": "C",
+    "explanation": "In many fishes, about 90% of fish muscle is white (light or no pigment) while 10% is red (dark) muscle."
+  },
+  {
+    "id": 5,
+    "question": "What is the primary function of dark muscle in fish?",
+    "option_a": "For abrupt movements and escaping predators",
+    "option_b": "For slow continuous motion (cruising)",
+    "option_c": "For storing fat reserves",
+    "option_d": "For digestion",
+    "correct_answer": "B",
+    "explanation": "Dark muscle functions as a cruising muscle for slow continuous motion, while light muscle is used for sprinting."
+  },
+  {
+    "id": 6,
+    "question": "At what temperature does fish collagen shrink compared to beef collagen at 64°C?",
+    "option_a": "25°C",
+    "option_b": "35°C",
+    "option_c": "45°C",
+    "option_d": "55°C",
+    "correct_answer": "C",
+    "explanation": "Fish collagen shrinks at 45°C while beef collagen shrinks at about 64°C, which is why fish softens faster during cooking."
+  },
+  {
+    "id": 7,
+    "question": "What percentage of collagen do bony fish contain?",
+    "option_a": "About 3%",
+    "option_b": "About 8%",
+    "option_c": "About 16%",
+    "option_d": "About 25%",
+    "correct_answer": "A",
+    "explanation": "Bony fish contain about 3% collagen, while cartilaginous fish contain about 16%."
+  },
+  {
+    "id": 8,
+    "question": "Which fish have the highest iron levels, even higher than red meats?",
+    "option_a": "Salmon and tuna",
+    "option_b": "Oysters and mussels",
+    "option_c": "Tilapia and catfish",
+    "option_d": "Cod and haddock",
+    "correct_answer": "B",
+    "explanation": "Oysters and mussels have very high levels of iron, higher than red meats."
+  },
+  {
+    "id": 9,
+    "question": "What protein makes up myocommata (connective tissue)?",
+    "option_a": "Myoglobin",
+    "option_b": "Hemoglobin",
+    "option_c": "Collagen",
+    "option_d": "Keratin",
+    "correct_answer": "C",
+    "explanation": "Myocommata are made up of connective tissues containing mostly the protein collagen."
+  },
+  {
+    "id": 10,
+    "question": "Pelagic fish like herring and mackerel that swim continuously can contain up to what percentage of dark muscle?",
+    "option_a": "10%",
+    "option_b": "24%",
+    "option_c": "48%",
+    "option_d": "70%",
+    "correct_answer": "C",
+    "explanation": "Pelagic fish that swim continuously contain up to 48% dark muscle, while bottom feeders have small amounts."
+  },
+  {
+    "id": 11,
+    "question": "Why is fish considered a health food compared to other protein sources?",
+    "option_a": "It provides higher protein content per gram than red meat or eggs",
+    "option_b": "It contains unique fatty acids not found in other common foods",
+    "option_c": "It contains less saturated fat than any other common protein source",
+    "option_d": "It has a lower calorie count than all plant-based protein alternatives",
+    "correct_answer": "B",
+    "explanation": "Fish is a health food because its oils consist of fatty acids different from those in other animal fats and vegetable oils, particularly omega-3 PUFA."
+  },
+  {
+    "id": 12,
+    "question": "Which vitamin is essential for vision and immune function found in fish?",
+    "option_a": "Vitamin C",
+    "option_b": "Vitamin D",
+    "option_c": "Vitamin A",
+    "option_d": "Vitamin K",
+    "correct_answer": "C",
+    "explanation": "Fish contains Vitamin A, which is essential for vision and immune function."
+  },
+  {
+    "id": 13,
+    "question": "What mineral in fish is critical for thyroid function and metabolic regulation?",
+    "option_a": "Calcium",
+    "option_b": "Iodine",
+    "option_c": "Magnesium",
+    "option_d": "Potassium",
+    "correct_answer": "B",
+    "explanation": "Iodine, found in fish, is critical for thyroid function and metabolic regulation."
+  },
+  {
+    "id": 14,
+    "question": "What class of fish includes sharks and rays?",
+    "option_a": "Cephalaspidomorphi",
+    "option_b": "Chondrichthyes",
+    "option_c": "Osteichthyes",
+    "option_d": "Agnatha",
+    "correct_answer": "B",
+    "explanation": "Chondrichthyes are cartilaginous fish including sharks and rays, with skeletons made of cartilage instead of bone."
+  },
+  {
+    "id": 15,
+    "question": "What are the four main parts of a typical bony fish?",
+    "option_a": "Myotomes, myocommata, dark muscle, and white muscle",
+    "option_b": "Skeleton, muscle tissues, skin and fins, viscera",
+    "option_c": "Skull, backbone, rib cage, and fin supports",
+    "option_d": "Viscera, collagen, myoglobin, and perimysium",
+    "correct_answer": "B",
+    "explanation": "The four main parts are: skeleton, muscle tissues with connective tissue and fat, skin and fins, and viscera (internal organs)."
+  },
+  {
+    "id": 16,
+    "question": "What factors affect the edible portion percentage of fish?",
+    "option_a": "Fat content, collagen, muscle type, species, and age",
+    "option_b": "Myoglobin level, viscera weight, collagen, skin, and species",
+    "option_c": "Anatomy, size, condition, palatability, and recovery technology",
+    "option_d": "Swimming behavior, fat content, skin, collagen, and species",
+    "correct_answer": "C",
+    "explanation": "The edible portion depends on anatomy, size, condition, what is considered palatable, and the technology used for recovering meat."
+  },
+  {
+    "id": 17,
+    "question": "What happens to myocommata during cooking?",
+    "option_a": "They harden and become chewy",
+    "option_b": "They gelatinize, causing fish to flake",
+    "option_c": "They harden and keep the muscle layers intact",
+    "option_d": "They contract and compress the muscle fibers",
+    "correct_answer": "B",
+    "explanation": "Myocommata gelatinize when cooked, which is why fish flakes into distinct myotome blocks during cooking."
+  },
+  {
+    "id": 18,
+    "question": "How long can fish muscle fibers reach?",
+    "option_a": "Up to 1 cm",
+    "option_b": "Up to 2 cm",
+    "option_c": "Up to 3 cm",
+    "option_d": "Up to 5 cm",
+    "correct_answer": "C",
+    "explanation": "Fish muscle fibers can reach up to 3 cm long, though they are only 10 to 100 micrometers thick."
+  },
+  {
+    "id": 19,
+    "question": "What type of metabolism does white muscle in fish use?",
+    "option_a": "Aerobic metabolism, used for sustained continuous movement",
+    "option_b": "Anaerobic metabolism, used for rapid short bursts of energy",
+    "option_c": "Combined aerobic and anaerobic metabolism during cruising and sprinting",
+    "option_d": "Aerobic metabolism similar to that used by dark muscle fibers",
+    "correct_answer": "B",
+    "explanation": "White muscle uses anaerobic metabolism for short bursts of energy needed for sprinting and escaping predators."
+  },
+  {
+    "id": 20,
+    "question": "Where is dark muscle typically located in fish?",
+    "option_a": "Throughout the entire body",
+    "option_b": "Only in the tail",
+    "option_c": "Along the midlateral line",
+    "option_d": "Only in the head region",
+    "correct_answer": "C",
+    "explanation": "Dark muscle is typically located along the midlateral line of the fish body."
+  },
+  {
+    "id": 21,
+    "question": "What gives dark muscle its red color?",
+    "option_a": "Blood vessels",
+    "option_b": "Myoglobin pigment",
+    "option_c": "Hemoglobin only",
+    "option_d": "Fat content",
+    "correct_answer": "B",
+    "explanation": "Dark muscle gets its red color from myoglobin pigment, and also contains higher levels of hemoglobin."
+  },
+  {
+    "id": 22,
+    "question": "How much collagen do cartilaginous fish contain compared to bony fish?",
+    "option_a": "About the same (3%)",
+    "option_b": "Slightly more (8%)",
+    "option_c": "Much more (16%)",
+    "option_d": "Less (1%)",
+    "correct_answer": "C",
+    "explanation": "Cartilaginous fish (sharks, rays) contain about 16% collagen, while bony fish contain only about 3%."
+  },
+  {
+    "id": 23,
+    "question": "What is the basic unit of muscular tissue in fish?",
+    "option_a": "Myotome",
+    "option_b": "Myocommata",
+    "option_c": "Muscle cell (fiber)",
+    "option_d": "Collagen strand",
+    "correct_answer": "C",
+    "explanation": "The basic unit of muscular tissue is the muscle cell, also called a fiber due to its long, narrow shape."
+  },
+  {
+    "id": 24,
+    "question": "What percentage does connective tissue protein constitute in mammals?",
+    "option_a": "3%",
+    "option_b": "10%",
+    "option_c": "17%",
+    "option_d": "25%",
+    "correct_answer": "C",
+    "explanation": "In mammals, connective tissue protein constitutes approximately 17% of total protein, much higher than in fish."
+  },
+  {
+    "id": 25,
+    "question": "Which type of fish typically has negligible amounts of red muscle (less than 5%)?",
+    "option_a": "Fish classified as pelagic open-water swimmers",
+    "option_b": "Fish classified as \"white\" fish",
+    "option_c": "Fish classified as bottom-dwelling demersal species",
+    "option_d": "All fish have the same amount",
+    "correct_answer": "B",
+    "explanation": "Fish classified as \"white\" have negligible amounts of red muscle, typically less than 5% of total muscle mass."
+  },
+  {
+    "id": 26,
+    "question": "What are B Complex Vitamins in fish important for?",
+    "option_a": "Vision support and immune system function",
+    "option_b": "Energy metabolism and nervous system health",
+    "option_c": "Thyroid regulation and metabolic rate control",
+    "option_d": "Antioxidant protection and cellular damage repair",
+    "correct_answer": "B",
+    "explanation": "B Complex Vitamins found in fish are important for energy metabolism and nervous system health."
+  },
+  {
+    "id": 27,
+    "question": "What is selenium in fish primarily known for?",
+    "option_a": "Regulating thyroid hormone production and supporting metabolic regulation",
+    "option_b": "Acting as a powerful antioxidant that protects cells",
+    "option_c": "Strengthening the immune response and accelerating wound healing",
+    "option_d": "Maintaining healthy bone density and supporting dental health",
+    "correct_answer": "B",
+    "explanation": "Selenium is a powerful antioxidant that protects cells from damage."
+  },
+  {
+    "id": 28,
+    "question": "What is zinc in fish essential for?",
+    "option_a": "Energy metabolism and nervous system health",
+    "option_b": "Vision support and immune system function",
+    "option_c": "Immune function and wound healing",
+    "option_d": "Thyroid function and metabolic rate regulation",
+    "correct_answer": "C",
+    "explanation": "Zinc is essential for immune function and wound healing."
+  },
+  {
+    "id": 29,
+    "question": "What is the Cephalaspidomorphi class of fish?",
+    "option_a": "Bony fish including bangus, salmon, and tilapia",
+    "option_b": "Jawless fish like lampreys and slime eels",
+    "option_c": "Cartilaginous fish such as sharks and rays",
+    "option_d": "Open-water fish such as herring and mackerel",
+    "correct_answer": "B",
+    "explanation": "Cephalaspidomorphi are jawless fish like lampreys and slime eels - primitive fish without true jaws."
+  },
+  {
+    "id": 30,
+    "question": "What does Osteichthyes class include?",
+    "option_a": "Cartilaginous fish including sharks, rays, and related species",
+    "option_b": "Jawless primitive fish such as lampreys and slime eels",
+    "option_c": "Bony fish including lungfish and all other common fish",
+    "option_d": "Pelagic ocean fish including herring, mackerel, and salmon",
+    "correct_answer": "C",
+    "explanation": "Osteichthyes are bony fish including lungfish and all other common fish - they have true bone skeletons."
+  },
+  {
+    "id": 31,
+    "question": "What is the diameter range of fish muscle fibers?",
+    "option_a": "1 to 5 micrometers",
+    "option_b": "10 to 100 micrometers",
+    "option_c": "200 to 500 micrometers",
+    "option_d": "1 to 2 millimeters",
+    "correct_answer": "B",
+    "explanation": "Fish muscle fibers are only 10 to 100 micrometers thick, despite reaching up to 3 cm in length."
+  },
+  {
+    "id": 32,
+    "question": "What happens to muscle fiber length and thickness as fish age?",
+    "option_a": "They decrease in size",
+    "option_b": "They remain constant",
+    "option_c": "They increase with age",
+    "option_d": "Only length increases",
+    "correct_answer": "C",
+    "explanation": "Both the length and thickness of muscle fibers increase as fish grow older."
+  },
+  {
+    "id": 33,
+    "question": "What type of metabolism does dark muscle use for sustained swimming?",
+    "option_a": "Anaerobic metabolism",
+    "option_b": "Aerobic metabolism",
+    "option_c": "Glycolysis only",
+    "option_d": "Fermentation",
+    "correct_answer": "B",
+    "explanation": "Dark muscle uses aerobic metabolism for sustained activity and continuous swimming."
+  },
+  {
+    "id": 34,
+    "question": "Why do demersal (bottom-dwelling) fish have small amounts of dark muscle?",
+    "option_a": "They rely on brief anaerobic bursts rather than sustained cruising",
+    "option_b": "They move only occasionally and have no need for sustained swimming",
+    "option_c": "Their white muscle alone is sufficient for their infrequent movement",
+    "option_d": "Their anaerobic white muscle handles all movement without needing aerobic capacity",
+    "correct_answer": "B",
+    "explanation": "Bottom-dwelling fish only move occasionally, so they don't require the sustained swimming endurance that dark muscle provides."
+  },
+  {
+    "id": 35,
+    "question": "What is the main advantage of fish collagen shrinking at a lower temperature (45°C) compared to beef (64°C)?",
+    "option_a": "Fish forms clean flakes when properly cooked",
+    "option_b": "Fish contains much less collagen than beef",
+    "option_c": "Fish softens much faster during cooking",
+    "option_d": "Fish suits more delicate food processing methods",
+    "correct_answer": "C",
+    "explanation": "The lower shrinking temperature of fish collagen (45°C vs 64°C for beef) means fish softens much faster during cooking, requiring less cooking time."
+  }
+]

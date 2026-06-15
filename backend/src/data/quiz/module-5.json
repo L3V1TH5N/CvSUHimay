@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "What are the four critical factors in maintaining fish quality?",
+    "option_a": "Size, color, weight, and smell",
+    "option_b": "Low temperature, cleanliness, speed, and care",
+    "option_c": "Freezing, drying, salting, and smoking",
+    "option_d": "Cutting, washing, packing, and selling",
+    "correct_answer": "B",
+    "explanation": "Low temperature, cleanliness, speed, and careful handling are the four critical factors."
+  },
+  {
+    "id": 2,
+    "question": "According to research, what happens to tilapia shelf life with a 12-hour delay in icing?",
+    "option_a": "Reduced to 20 days",
+    "option_b": "Reduced to 16 days",
+    "option_c": "Reduced to only 1 day",
+    "option_d": "No significant change",
+    "correct_answer": "C",
+    "explanation": "A 12-hour delay in icing reduces tilapia shelf life to only 1 day, showing the critical importance of immediate icing."
+  },
+  {
+    "id": 3,
+    "question": "What causes browning or blackening of tuna and bonito meat during frozen storage?",
+    "option_a": "Unchecked bacterial growth during cold storage",
+    "option_b": "Oxidation of hemoglobin and myoglobin",
+    "option_c": "Freezer burn damage on the exposed fish surface",
+    "option_d": "Reactions involving chemical preservatives in the meat",
+    "correct_answer": "B",
+    "explanation": "Browning is caused by oxidation of hemoglobin in blood and myoglobin in meat through oxidative enzymes."
+  },
+  {
+    "id": 4,
+    "question": "What additives can prevent discoloration in tuna and bonito?",
+    "option_a": "Salt and sugar",
+    "option_b": "Sodium nitrate and ascorbic acid",
+    "option_c": "Citric acid and vinegar",
+    "option_d": "Baking soda and lime",
+    "correct_answer": "B",
+    "explanation": "Sodium nitrate and ascorbic acid (Vitamin C) prevent oxidation of hemoglobin and myoglobin."
+  },
+  {
+    "id": 5,
+    "question": "What causes green discoloration in tuna meat?",
+    "option_a": "Unchecked bacterial contamination in the flesh",
+    "option_b": "Presence of trimethylamine oxide (TMAO)",
+    "option_c": "Excessive freezing causing ice crystal damage",
+    "option_d": "Using an incorrect final cooking temperature",
+    "correct_answer": "B",
+    "explanation": "Greening is due to trimethylamine oxide (TMAO) combined with myoglobin, cysteine, and cooking conditions."
+  },
+  {
+    "id": 6,
+    "question": "What is the best prevention method for green discoloration in tuna?",
+    "option_a": "Apply sodium nitrate and ascorbic acid preservatives first",
+    "option_b": "Use only fresh raw material and gut/bleed before freezing",
+    "option_c": "Freeze the fish as quickly as possible without delay",
+    "option_d": "Cook the fish at very high temperatures initially",
+    "correct_answer": "B",
+    "explanation": "Using fresh raw material and gutting/bleeding fish before freezing are the highest priority prevention methods."
+  },
+  {
+    "id": 7,
+    "question": "What is \"gaping\" in fish fillets?",
+    "option_a": "Holes and gaps left from removing the bones",
+    "option_b": "The tendency of fillets to split into fissures",
+    "option_c": "Separation of the skin from the flesh layer",
+    "option_d": "Patterns of bacterial growth within the flesh",
+    "correct_answer": "B",
+    "explanation": "Gaping is the splitting of fillets into fissures along muscle segments when connective tissue weakens."
+  },
+  {
+    "id": 8,
+    "question": "How can gaping in fillets be prevented?",
+    "option_a": "Freeze fish immediately after death",
+    "option_b": "Fillet fish after rigor mortis has passed",
+    "option_c": "Use chemical additives",
+    "option_d": "Store at room temperature",
+    "correct_answer": "B",
+    "explanation": "Wait until fish has passed rigor mortis before filleting, or freeze within 2-3 days while storing near 0°C."
+  },
+  {
+    "id": 9,
+    "question": "What temperature should milkfish be pre-chilled to for quality preservation during transport?",
+    "option_a": "0°C",
+    "option_b": "4°C",
+    "option_c": "10°C",
+    "option_d": "15°C",
+    "correct_answer": "B",
+    "explanation": "Pre-chill milkfish to 4°C immediately after harvest to preserve quality during transport."
+  },
+  {
+    "id": 10,
+    "question": "What indicates fresh fish odor?",
+    "option_a": "Very strong or pungent fishy smell",
+    "option_b": "Sweet, mild, fresh ocean smell",
+    "option_c": "Sharp, strong ammonia odor throughout",
+    "option_d": "Sour or putrid odor detected",
+    "correct_answer": "B",
+    "explanation": "Fresh fish has a sweet, mild, fresh ocean/water smell with no ammonia or sour notes."
+  },
+  {
+    "id": 11,
+    "question": "Why must fish not be handled frequently during processing?",
+    "option_a": "It raises overall processing costs significantly",
+    "option_b": "Physical damage creates bacteria entry points",
+    "option_c": "It causes slower processing and reduced output",
+    "option_d": "It creates confusion among the processing workers",
+    "correct_answer": "B",
+    "explanation": "Physical damage from frequent handling creates entry points for bacteria and reduces product quality and shelf life."
+  },
+  {
+    "id": 12,
+    "question": "What happens to tilapia shelf life with a 4-hour delay in icing?",
+    "option_a": "Reduced to 1 day",
+    "option_b": "Reduced to 16 days",
+    "option_c": "Reduced to 20 days",
+    "option_d": "No significant change",
+    "correct_answer": "C",
+    "explanation": "A 4-hour delay in icing reduces tilapia shelf life to 20 days, showing moderate quality loss."
+  },
+  {
+    "id": 13,
+    "question": "What happens to tilapia shelf life with an 8-hour delay in icing?",
+    "option_a": "Reduced to 1 day",
+    "option_b": "Reduced to 16 days",
+    "option_c": "Reduced to 20 days",
+    "option_d": "Reduced to 10 days",
+    "correct_answer": "B",
+    "explanation": "An 8-hour delay in icing reduces tilapia shelf life to 16 days, showing significant quality degradation."
+  },
+  {
+    "id": 14,
+    "question": "According to research by Legaspi and Khiang (1972), what is more advantageous for shrimp storage?",
+    "option_a": "Storing raw shrimp on ice",
+    "option_b": "Cooking shrimp before ice storage",
+    "option_c": "Freezing raw shrimp immediately",
+    "option_d": "Storing shrimp at room temperature",
+    "correct_answer": "B",
+    "explanation": "Cooking shrimp before ice storage is more advantageous and maintains better quality than raw during storage."
+  },
+  {
+    "id": 15,
+    "question": "What problem does cooking shrimp before storage help prevent?",
+    "option_a": "Progressive texture loss in shrimp flesh",
+    "option_b": "Melanosis (black spot) development",
+    "option_c": "Rapid weight loss during extended storage",
+    "option_d": "Development of off-odors during storage",
+    "correct_answer": "B",
+    "explanation": "Cooking shrimp before storage prevents melanosis (black spot) development and extends shelf life significantly."
+  },
+  {
+    "id": 16,
+    "question": "What is depuration in shellfish handling?",
+    "option_a": "Process of cooking shellfish at high temperature",
+    "option_b": "Purification process to remove harmful bacteria",
+    "option_c": "Technique of rapidly freezing shellfish immediately",
+    "option_d": "Method of vacuum packaging shellfish for transport",
+    "correct_answer": "B",
+    "explanation": "Depuration is a purification process using UV-sterilized recirculating seawater to remove harmful bacteria from shellfish."
+  },
+  {
+    "id": 17,
+    "question": "How long should the depuration cycle be for oysters and mussels?",
+    "option_a": "12-24 hours",
+    "option_b": "24-36 hours",
+    "option_c": "36-48 hours",
+    "option_d": "48-72 hours",
+    "correct_answer": "C",
+    "explanation": "Depuration requires 36-48 hours at 26-31°C to reduce fecal bacteria to safe levels."
+  },
+  {
+    "id": 18,
+    "question": "What temperature range is used for shellfish depuration?",
+    "option_a": "10-15°C",
+    "option_b": "15-20°C",
+    "option_c": "20-25°C",
+    "option_d": "26-31°C",
+    "correct_answer": "D",
+    "explanation": "Shellfish depuration is conducted at 26-31°C using UV-sterilized recirculating seawater."
+  },
+  {
+    "id": 19,
+    "question": "Why do oysters and mussels require depuration?",
+    "option_a": "They are highly perishable and spoil very quickly",
+    "option_b": "They may contain harmful bacteria from filtering water",
+    "option_c": "They accumulate dirt and need thorough cleaning first",
+    "option_d": "They frequently harbor parasites and external contaminants",
+    "correct_answer": "B",
+    "explanation": "As filter-feeding mollusks, oysters and mussels may contain harmful bacteria from the water they filter, requiring depuration."
+  },
+  {
+    "id": 20,
+    "question": "What is the optimal storage temperature for fresh fish?",
+    "option_a": "Near 0°C",
+    "option_b": "5°C",
+    "option_c": "10°C",
+    "option_d": "Room temperature",
+    "correct_answer": "A",
+    "explanation": "Fish should be stored at temperatures as close to 0°C as possible without freezing to slow bacterial growth."
+  },
+  {
+    "id": 21,
+    "question": "What type of ice is best for fish storage?",
+    "option_a": "Large solid block ice units",
+    "option_b": "Frozen seawater or brine ice",
+    "option_c": "Crushed or flaked freshwater ice",
+    "option_d": "Any available type of ice",
+    "correct_answer": "C",
+    "explanation": "Crushed or flaked freshwater ice works better than block ice and should not be made from seawater."
+  },
+  {
+    "id": 22,
+    "question": "What is the recommended ice-to-fish ratio for proper storage?",
+    "option_a": "1:3 (ice:fish)",
+    "option_b": "1:2 (ice:fish)",
+    "option_c": "1:1 (ice:fish)",
+    "option_d": "2:1 (ice:fish)",
+    "correct_answer": "C",
+    "explanation": "Use an ice-to-fish ratio of approximately 1:1 by weight for optimal temperature maintenance."
+  },
+  {
+    "id": 23,
+    "question": "Why should meltwater be drained regularly from iced fish?",
+    "option_a": "To save ice",
+    "option_b": "To prevent bacterial growth",
+    "option_c": "To reduce weight",
+    "option_d": "To improve appearance",
+    "correct_answer": "B",
+    "explanation": "Meltwater should be drained regularly to prevent bacterial growth in the accumulated water."
+  },
+  {
+    "id": 24,
+    "question": "Within how many days of death should fish be frozen for best quality?",
+    "option_a": "1 day",
+    "option_b": "2-3 days",
+    "option_c": "5-7 days",
+    "option_d": "10 days",
+    "correct_answer": "B",
+    "explanation": "Fish should be frozen within 2-3 days of death while stored near 0°C for best quality fillets."
+  },
+  {
+    "id": 25,
+    "question": "What temperature should frozen fish be stored at for long-term preservation?",
+    "option_a": "-5°C or lower",
+    "option_b": "-10°C or lower",
+    "option_c": "-18°C or lower",
+    "option_d": "-25°C or lower",
+    "correct_answer": "C",
+    "explanation": "Frozen fish should be maintained at -18°C or lower for long-term storage."
+  },
+  {
+    "id": 26,
+    "question": "What happens when fish is frozen too quickly?",
+    "option_a": "Large ice crystals form and damage texture",
+    "option_b": "Small ice crystals form, preserving texture",
+    "option_c": "No freezing occurs",
+    "option_d": "Fish becomes dehydrated",
+    "correct_answer": "B",
+    "explanation": "Quick freezing is beneficial as it prevents large ice crystal formation that would damage texture."
+  },
+  {
+    "id": 27,
+    "question": "What type of packaging should be used for frozen fish?",
+    "option_a": "Standard paper storage bags",
+    "option_b": "Soft cloth or fabric wrapping",
+    "option_c": "Moisture-proof, vapor-proof materials",
+    "option_d": "Any available packaging material",
+    "correct_answer": "C",
+    "explanation": "Use moisture-proof, vapor-proof materials to prevent freezer burn and quality loss."
+  },
+  {
+    "id": 28,
+    "question": "What is glazing in frozen fish products?",
+    "option_a": "A thin dry salt coating on the surface",
+    "option_b": "A thin ice coating to protect surface",
+    "option_c": "A light coating of vegetable oil applied",
+    "option_d": "A tight wrapping of plastic around the fish",
+    "correct_answer": "B",
+    "explanation": "Glazing is a thin ice coating applied to whole frozen fish to protect the surface from oxidation."
+  },
+  {
+    "id": 29,
+    "question": "What material improvement has been made for fish storage containers?",
+    "option_a": "Steel containers (heavy, prone to corrosion)",
+    "option_b": "Wooden crates (absorb bacteria, hard to clean)",
+    "option_c": "High-density polyethylene (HDPE)",
+    "option_d": "Cardboard boxes (absorb moisture, not sanitary)",
+    "correct_answer": "C",
+    "explanation": "High-density polyethylene (HDPE) containers are durable, lightweight, easy to clean, and resistant to corrosion."
+  },
+  {
+    "id": 30,
+    "question": "What is the advantage of insulated containers for fish storage?",
+    "option_a": "They have lower purchase cost than alternatives",
+    "option_b": "Better temperature retention and reduced ice consumption",
+    "option_c": "They are significantly lighter than steel containers",
+    "option_d": "They provide better visual appeal for display",
+    "correct_answer": "B",
+    "explanation": "Insulated containers provide better temperature retention and reduce ice consumption during storage and transport."
+  },
+  {
+    "id": 31,
+    "question": "What chemical process causes browning in frozen tuna?",
+    "option_a": "Hemoglobin → Oxyhemoglobin → Methemoglobin",
+    "option_b": "Myoglobin → Trimethylamine oxide → Brown pigment",
+    "option_c": "Protein → Peptides → Free amino acids",
+    "option_d": "Oxymyoglobin → Metmyoglobin → Rancid compounds",
+    "correct_answer": "A",
+    "explanation": "Browning occurs through oxidation: Hemoglobin → Oxyhemoglobin → Methemoglobin (dark brown/red)."
+  },
+  {
+    "id": 32,
+    "question": "What role does ascorbic acid play in preventing tuna discoloration?",
+    "option_a": "It adds flavor",
+    "option_b": "It acts as an antioxidant",
+    "option_c": "It reduces pH",
+    "option_d": "It adds color",
+    "correct_answer": "B",
+    "explanation": "Ascorbic acid (Vitamin C) acts as an antioxidant to prevent oxidation of hemoglobin and myoglobin."
+  },
+  {
+    "id": 33,
+    "question": "According to Rillo and Alabastro (1974), what factors correlate with greening in steam-cooked tuna?",
+    "option_a": "Fat content, size, and water temperature",
+    "option_b": "Trimethylamine, pH, and soluble protein",
+    "option_c": "Temperature, time, and cook duration only",
+    "option_d": "Salt content, processing time, and storage",
+    "correct_answer": "B",
+    "explanation": "Greening correlates with trimethylamine, pH, and soluble protein content of the raw fish."
+  },
+  {
+    "id": 34,
+    "question": "What should be done first to prevent green discoloration in tuna?",
+    "option_a": "Freeze the fish as fast as possible",
+    "option_b": "Use only fresh, high-quality raw material",
+    "option_c": "Add sodium nitrate as a preservative first",
+    "option_d": "Cook the fish at a lower temperature setting",
+    "correct_answer": "B",
+    "explanation": "Using only fresh raw material for freezing is the highest priority prevention method."
+  },
+  {
+    "id": 35,
+    "question": "Why is gutting and bleeding important before freezing tuna?",
+    "option_a": "To reduce the overall weight before freezing",
+    "option_b": "To remove blood containing hemoglobin",
+    "option_c": "To improve the external appearance of the fish",
+    "option_d": "To speed up the overall freezing process",
+    "correct_answer": "B",
+    "explanation": "Gutting and bleeding removes blood containing hemoglobin, which helps prevent discoloration."
+  },
+  {
+    "id": 36,
+    "question": "What happens to connective tissue in fillets that causes gaping?",
+    "option_a": "It strengthens",
+    "option_b": "It weakens",
+    "option_c": "It multiplies",
+    "option_d": "It hardens",
+    "correct_answer": "B",
+    "explanation": "Gaping occurs when the connective tissue between muscle segments weakens."
+  },
+  {
+    "id": 37,
+    "question": "What is the primary cause of gaping when filleting fish too early?",
+    "option_a": "Fish being stored at too cold a temperature",
+    "option_b": "Filleting before rigor mortis has passed",
+    "option_c": "Using a knife that is too sharp or thin",
+    "option_d": "Fish being processed when it is too fresh",
+    "correct_answer": "B",
+    "explanation": "Filleting fish before rigor mortis has passed is the primary cause of gaping."
+  },
+  {
+    "id": 38,
+    "question": "What odor indicates early deterioration in fish?",
+    "option_a": "Very sweet and mild fresh water smell",
+    "option_b": "Neutral to slightly fishy smell",
+    "option_c": "Sharp and overwhelming ammonia odor",
+    "option_d": "Sour and putrid decomposition odor",
+    "correct_answer": "B",
+    "explanation": "Neutral to slightly fishy smell indicates early deterioration - still acceptable but past peak."
+  },
+  {
+    "id": 39,
+    "question": "What odor definitively indicates spoiled fish that should be rejected?",
+    "option_a": "Very mild and faint fishy smell",
+    "option_b": "Sweet, clean ocean water smell",
+    "option_c": "Strong ammonia or sour odor",
+    "option_d": "Neutral or barely detectable smell",
+    "correct_answer": "C",
+    "explanation": "Strong ammonia or sour, putrid odor indicates spoiled fish that should be rejected immediately."
+  },
+  {
+    "id": 40,
+    "question": "What are TMA and VRS used for in fish quality assessment?",
+    "option_a": "Measuring weight",
+    "option_b": "Chemical indicators of spoilage",
+    "option_c": "Determining species",
+    "option_d": "Measuring freshness only",
+    "correct_answer": "B",
+    "explanation": "Trimethylamine (TMA) and Volatile Reducing Substances (VRS) are chemical indicators of spoilage that increase as fish deteriorates."
+  },
+  {
+    "id": 41,
+    "question": "Who studied the impact of delayed icing on milkfish post-mortem changes?",
+    "option_a": "Santos and Acevedo (1978)",
+    "option_b": "Arciaga (1996)",
+    "option_c": "Dolendo et al. (1977)",
+    "option_d": "Rillo and Alabastro (1974)",
+    "correct_answer": "B",
+    "explanation": "Arciaga (1996) studied postmortem changes in milkfish with delayed icing, confirming immediate chilling is critical."
+  },
+  {
+    "id": 42,
+    "question": "What should fish appearance look like to indicate freshness?",
+    "option_a": "Sunken eyes with dull gray or brown gills",
+    "option_b": "Clear bright eyes and bright red gills",
+    "option_c": "Cloudy eyes with brown or discolored gills",
+    "option_d": "Any external appearance condition is acceptable",
+    "correct_answer": "B",
+    "explanation": "Fresh fish should have clear bright eyes (not sunken or cloudy) and bright red gills (not brown or gray)."
+  },
+  {
+    "id": 43,
+    "question": "How should fish flesh feel to indicate freshness?",
+    "option_a": "Very soft and mushy when pressed firmly",
+    "option_b": "Firm and elastic, springs back when pressed",
+    "option_c": "Very hard and completely rigid throughout",
+    "option_d": "Very sticky and excessively slimy surface",
+    "correct_answer": "B",
+    "explanation": "Fresh fish flesh should be firm and elastic, springing back when pressed."
+  },
+  {
+    "id": 44,
+    "question": "Why is speed essential during fish processing?",
+    "option_a": "To save time and operational money costs",
+    "option_b": "To minimize quality loss and bacterial growth",
+    "option_c": "To allow workers to finish processing earlier",
+    "option_d": "To impress customers and improve market reputation",
+    "correct_answer": "B",
+    "explanation": "Speed is essential to minimize quality loss - every minute at improper temperature accelerates deterioration and bacterial growth."
+  },
+  {
+    "id": 45,
+    "question": "What happens to fish protective slime layer with frequent handling?",
+    "option_a": "It increases",
+    "option_b": "It is removed",
+    "option_c": "It hardens",
+    "option_d": "Nothing happens",
+    "correct_answer": "B",
+    "explanation": "Frequent handling removes the protective slime layer, increasing risk of bacterial contamination."
+  },
+  {
+    "id": 46,
+    "question": "Why should ice be replenished during fish storage?",
+    "option_a": "For better visual appearance of the product",
+    "option_b": "To maintain temperature as ice melts",
+    "option_c": "To add more weight to the fish product",
+    "option_d": "To comply with food safety regulatory standards",
+    "correct_answer": "B",
+    "explanation": "Ice should be replenished as it melts to maintain the critical near-0°C temperature."
+  },
+  {
+    "id": 47,
+    "question": "What is the benefit of complete ice coverage (top, bottom, and sides)?",
+    "option_a": "Better appearance",
+    "option_b": "Uniform temperature maintenance",
+    "option_c": "Easier handling",
+    "option_d": "Reduced cost",
+    "correct_answer": "B",
+    "explanation": "Complete ice coverage ensures uniform temperature maintenance throughout the fish."
+  },
+  {
+    "id": 48,
+    "question": "What problem occurs with thaw-refreeze cycles in frozen fish?",
+    "option_a": "Significant improvement in overall fish texture",
+    "option_b": "Quality deterioration and texture damage",
+    "option_c": "Notably better and stronger fish flavor",
+    "option_d": "Significantly extended and improved shelf life",
+    "correct_answer": "B",
+    "explanation": "Thaw-refreeze cycles cause quality deterioration and texture damage - fish should be stored at consistent temperatures."
+  },
+  {
+    "id": 49,
+    "question": "What is the purpose of sorting fish immediately after harvest?",
+    "option_a": "To count and record the total fish numbers",
+    "option_b": "To allow appropriate processing and prevent cross-contamination",
+    "option_c": "To weigh and document each fish accurately",
+    "option_d": "To display the fish attractively for customers",
+    "correct_answer": "B",
+    "explanation": "Immediate sorting allows for appropriate processing methods for each species, uniform cooling, and prevents cross-contamination."
+  },
+  {
+    "id": 50,
+    "question": "According to Dolendo et al. (1977), why is pre-chilling milkfish important?",
+    "option_a": "To improve the overall flavor and taste",
+    "option_b": "To preserve quality and freshness during transport",
+    "option_c": "To kill and eliminate harmful surface bacteria",
+    "option_d": "To reduce total weight and shipping costs",
+    "correct_answer": "B",
+    "explanation": "Pre-chilling to 4°C preserves quality during transport, especially important for long-distance transportation."
+  }
+]

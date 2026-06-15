@@ -1,0 +1,327 @@
+/* file path: web/src/pages/dashboards/student/DeboningGuideFull.css */
+/* Scoped to DeboningGuideFull.jsx only. Do NOT import elsewhere. */
+
+/* ── Section heading ──────────────────────────────────────────────────── */
+
+.gf-section-h2 {
+  font-family: var(--font-ui);
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  color: var(--color-fg);
+  margin: 0 0 18px;
+  line-height: 1.2;
+}
+
+/* ── Prose paragraphs ─────────────────────────────────────────────────── */
+
+.gf-prose {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gf-prose p {
+  font-size: 14px;
+  font-family: var(--font-ui);
+  color: var(--color-fg-muted);
+  line-height: 1.78;
+  margin: 0;
+}
+
+.gf-prose strong {
+  color: var(--color-fg);
+  font-weight: 600;
+}
+
+/* ── Section intro text ───────────────────────────────────────────────── */
+
+.gf-intro {
+  font-size: 13.5px;
+  font-family: var(--font-ui);
+  color: var(--color-fg-muted);
+  line-height: 1.65;
+  margin: 0 0 18px;
+}
+
+/* ── Video reference ──────────────────────────────────────────────────── */
+
+.gf-video-wrap {
+  width: 100%;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface-2);
+  overflow: hidden;
+}
+
+.gf-video-wrap video {
+  width: 100%;
+  display: block;
+  max-height: 480px;
+  object-fit: contain;
+  background: #000;
+}
+
+.gf-video-caption {
+  font-size: 11.5px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  line-height: 1.5;
+  padding: 9px 14px;
+  border-top: 1px solid var(--color-hairline);
+  margin: 0;
+}
+
+/* ── Bone zone grid ───────────────────────────────────────────────────── */
+
+.gf-zone-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--color-hairline);
+  border: 1px solid var(--color-hairline);
+}
+
+.gf-zone-card {
+  background: var(--color-surface);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.gf-zone-index {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  text-transform: uppercase;
+}
+
+.gf-zone-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+}
+
+.gf-zone-desc {
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.55;
+}
+
+/* ── Materials table list ─────────────────────────────────────────────── */
+
+.gf-materials {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-hairline);
+}
+
+.gf-material-item {
+  display: flex;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.gf-material-item:last-child {
+  border-bottom: 0;
+}
+
+.gf-material-name {
+  width: 172px;
+  flex-shrink: 0;
+  padding: 11px 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  border-right: 1px solid var(--color-hairline);
+  background: var(--color-surface-2);
+  line-height: 1.4;
+}
+
+.gf-material-desc {
+  flex: 1;
+  padding: 11px 16px;
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.6;
+}
+
+/* ── Procedure steps ──────────────────────────────────────────────────── */
+
+.gf-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-hairline);
+}
+
+.gf-step {
+  display: flex;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--color-hairline);
+  align-items: flex-start;
+}
+
+.gf-step:last-child {
+  border-bottom: 0;
+}
+
+.gf-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  font-size: 9.5px;
+  font-weight: 700;
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.gf-step-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.gf-step-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.gf-step-body {
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.65;
+}
+
+/* ── Generic list (objectives, safety) ───────────────────────────────── */
+
+.gf-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gf-list-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.gf-list-marker {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 700;
+  font-family: var(--font-ui);
+  color: var(--color-bg);
+  background: var(--color-fg);
+  margin-top: 1px;
+}
+
+.gf-list-marker--warn {
+  background: color-mix(in srgb, var(--color-warning) 14%, transparent);
+  color: var(--color-warning);
+  font-size: 11px;
+}
+
+.gf-list-text {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.65;
+}
+
+/* ── Practical use table list ─────────────────────────────────────────── */
+
+.gf-use-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-hairline);
+}
+
+.gf-use-item {
+  display: flex;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.gf-use-item:last-child {
+  border-bottom: 0;
+}
+
+.gf-use-name {
+  width: 172px;
+  flex-shrink: 0;
+  padding: 11px 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  border-right: 1px solid var(--color-hairline);
+  background: var(--color-surface-2);
+  line-height: 1.4;
+}
+
+.gf-use-desc {
+  flex: 1;
+  padding: 11px 16px;
+  font-size: 12.5px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  line-height: 1.6;
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .gf-zone-grid { grid-template-columns: 1fr; }
+
+  .gf-material-item { flex-direction: column; }
+  .gf-material-name {
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-hairline);
+  }
+
+  .gf-use-item { flex-direction: column; }
+  .gf-use-name {
+    width: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-hairline);
+  }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .gf-section-h2  { font-size: 23px; }
+  .gf-prose p     { font-size: 16px; }
+  .gf-intro       { font-size: 15px; }
+  .gf-step-title  { font-size: 15px; }
+  .gf-step-body   { font-size: 14px; }
+  .gf-list-text   { font-size: 15px; }
+  .gf-zone-name   { font-size: 15px; }
+  .gf-zone-desc   { font-size: 14px; }
+}

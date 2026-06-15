@@ -1,0 +1,343 @@
+/* file path: web/src/pages/dashboards/admin/Overview.css */
+/* Scope: Overview.jsx only. Do NOT import elsewhere. */
+
+/* ── Page header ─────────────────────────────────────────────── */
+.ov-ph {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 36px;
+}
+.ov-ph-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+.ov-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+  margin: 0;
+}
+.ov-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* System status indicator */
+.ov-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 4px;
+  flex-shrink: 0;
+}
+.ov-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 3px color-mix(in srgb, #22c55e 18%, transparent);
+}
+.ov-status-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+}
+
+/* ── Asymmetric Stats ─────────────────────────────────────────── */
+.ov-stats {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 36px;
+}
+
+.ov-stat-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 40px;
+  border-right: 1px solid var(--color-hairline);
+  flex-shrink: 0;
+}
+.ov-stat-hero-val {
+  font-family: var(--font-ui);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+.ov-stat-hero-label {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+}
+
+.ov-stat-cluster {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+  padding-left: 40px;
+}
+.ov-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  padding: 0 24px;
+}
+.ov-stat-item:first-child { padding-left: 0; }
+.ov-stat-item + .ov-stat-item {
+  border-left: 1px solid var(--color-hairline);
+}
+.ov-stat-item-val {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+.ov-stat-item-label {
+  font-family: var(--font-ui);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+}
+
+/* ── Section ─────────────────────────────────────────────────── */
+.ov-section { margin-bottom: 36px; }
+.ov-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 16px;
+}
+.ov-section-title {
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+.ov-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  color: var(--color-fg-subtle);
+  padding: 0;
+  transition: color 120ms ease;
+}
+.ov-view-all:hover { color: var(--color-accent); }
+
+/* ── Quick Actions ───────────────────────────────────────────── */
+.ov-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--color-hairline);
+  border: 1px solid var(--color-hairline);
+  overflow: hidden;
+}
+.ov-action-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--color-surface);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 100ms ease;
+}
+.ov-action-item:hover { background: var(--color-surface-3); }
+.ov-action-item:hover .ov-action-arrow { opacity: 1; color: var(--color-accent); }
+.ov-action-icon { color: var(--color-fg-subtle); flex-shrink: 0; }
+.ov-action-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+.ov-action-label {
+  font-family: var(--font-ui);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-fg);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ov-action-sub {
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+  color: var(--color-fg-subtle);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ov-action-arrow {
+  color: var(--color-fg-subtle);
+  opacity: 0;
+  transition: opacity 120ms ease, color 120ms ease;
+  flex-shrink: 0;
+}
+
+/* ── Narrative Timeline ──────────────────────────────────────── */
+.ov-timeline {
+  display: flex;
+  flex-direction: column;
+}
+.ov-timeline-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.ov-timeline-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+  flex-shrink: 0;
+  width: 8px;
+}
+.ov-timeline-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-fg-subtle);
+  flex-shrink: 0;
+}
+.ov-timeline-line {
+  width: 1px;
+  flex: 1;
+  background: var(--color-hairline);
+  margin-top: 6px;
+  min-height: 16px;
+}
+.ov-timeline-body {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 18px;
+  flex: 1;
+}
+.ov-timeline-item:last-child .ov-timeline-body {
+  padding-bottom: 0;
+}
+.ov-timeline-text {
+  font-family: var(--font-ui);
+  font-size: 13.5px;
+  color: var(--color-fg-muted);
+  line-height: 1.5;
+  flex: 1;
+}
+.ov-timeline-text strong {
+  font-weight: 600;
+  color: var(--color-fg);
+}
+.ov-timeline-time {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--color-fg-subtle);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Empty state ─────────────────────────────────────────────── */
+.ov-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 24px;
+  color: var(--color-fg-subtle);
+  font-size: 13px;
+  font-family: var(--font-ui);
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ov-stat-cluster { flex-wrap: wrap; }
+  .ov-stat-item    { flex: 1 1 40%; }
+  .ov-actions      { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .ov-ph-title      { font-size: 28px; }
+  .ov-stat-hero-val { font-size: 52px; }
+  .ov-stat-hero     { padding-right: 24px; }
+  .ov-stat-cluster  { padding-left: 24px; }
+  .ov-stat-item-val { font-size: 28px; }
+  .ov-stat-item     { padding: 0 16px; }
+}
+
+@media (max-width: 480px) {
+  .ov-stats { flex-direction: column; align-items: flex-start; }
+  .ov-stat-hero {
+    padding-right: 0;
+    padding-bottom: 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--color-hairline);
+    width: 100%;
+  }
+  .ov-stat-cluster {
+    padding-left: 0;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .ov-stat-item { flex: 1 1 40%; padding: 0; }
+  .ov-stat-item + .ov-stat-item { border-left: none; }
+  .ov-actions { grid-template-columns: 1fr; }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────── */
+@media (min-width: 1440px) {
+  .ov-ph-title        { font-size: 44px; }
+  .ov-stat-hero-val   { font-size: 88px; }
+  .ov-stat-hero-label { font-size: 11px; }
+  .ov-stat-item-val   { font-size: 44px; }
+  .ov-stat-item-label { font-size: 11px; }
+  .ov-status-label    { font-size: 11.5px; }
+  .ov-section-title   { font-size: 11.5px; }
+  .ov-view-all        { font-size: 11.5px; }
+  .ov-action-label    { font-size: 14px; }
+  .ov-action-sub      { font-size: 12px; }
+  .ov-timeline-text   { font-size: 15px; }
+  .ov-timeline-time   { font-size: 12.5px; }
+}

@@ -1,0 +1,514 @@
+/* file path: web/src/pages/dashboards/student/learning/ModuleReader.css */
+/* Direction B — Clean Document redesign, 1280–1366px primary target      */
+
+/* ── Header ──────────────────────────────────────────────────────────── */
+
+.reader-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 52px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 14px;
+  z-index: 60;
+  transition: transform 250ms ease;
+}
+
+.reader-header--hidden {
+  transform: translateY(-52px);
+}
+
+.reader-progress {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 150ms ease-out;
+  pointer-events: none;
+}
+
+.reader-back {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 0;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 150ms ease;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+}
+.reader-back:hover {
+  color: var(--color-accent);
+}
+
+.reader-header-title {
+  flex: 1;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-fg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.reader-header-controls {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.reader-switcher-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--color-surface-2);
+  color: var(--color-fg-muted);
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+}
+.reader-switcher-btn:hover,
+.reader-switcher-btn--open {
+  background: var(--color-surface-3);
+  color: var(--color-fg);
+}
+
+/* ── Main scroll area ────────────────────────────────────────────────── */
+
+.reader-main {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ── Two-column layout wrapper ───────────────────────────────────────── */
+
+/* Expanded to 1080px — fills a 1280px laptop better (was 988px) */
+.reader-layout {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 32px 80px;
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+}
+@media (min-width: 1024px) {
+  .reader-layout {
+    padding: 80px 44px 80px;
+  }
+}
+
+/* ── Sticky sidebar TOC (desktop only) ───────────────────────────────── */
+
+.reader-sidebar {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .reader-sidebar {
+    display: block;
+    width: 216px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 68px;
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
+  }
+}
+
+.reader-sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.reader-sidebar-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reader-sidebar-count {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* Active state: left accent border + very light tint — both signals together */
+.reader-sidebar-row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 7px 10px 7px 8px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--color-fg-muted);
+  background: none;
+  border: none;
+  border-left: 2px solid transparent;
+  cursor: pointer;
+  text-align: left;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  font-family: var(--font-ui);
+}
+.reader-sidebar-row:hover {
+  background: var(--color-surface-2);
+  color: var(--color-fg);
+}
+.reader-sidebar-row--active {
+  border-left-color: var(--color-accent);
+  color: var(--color-fg);
+  font-weight: 500;
+  background: color-mix(in srgb, var(--color-accent) 6%, transparent);
+}
+
+.reader-sidebar-indicator {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+
+.reader-sidebar-num {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* ── Content column ──────────────────────────────────────────────────── */
+
+.reader-column {
+  flex: 1;
+  min-width: 0;
+  max-width: 660px;
+}
+
+/* ── Module header block ─────────────────────────────────────────────── */
+
+.reader-mod-header {
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 48px;
+}
+
+.reader-mod-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  margin-bottom: 14px;
+}
+
+/* Chapter-title scale — document feel, not landing-page hero */
+/* Was clamp(36px, 4.6vw, 56px) — at 1280px that hit ~59px */
+.reader-mod-title {
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--color-fg);
+  margin: 0 0 18px;
+}
+
+.reader-mod-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.reader-mod-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  background: none;
+  color: var(--color-fg-muted);
+  border: 1px solid var(--color-hairline);
+}
+
+.reader-mod-desc {
+  font-size: 15.5px;
+  color: var(--color-fg-muted);
+  line-height: 1.8;
+  font-family: var(--font-ui);
+  margin: 0;
+}
+
+.reader-mod-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  color: var(--color-accent);
+}
+
+/* ── Article content ─────────────────────────────────────────────────── */
+
+/* No 68ch cap — the column's max-width (660px) is the line-length control */
+.reader-article {
+  margin-bottom: 52px;
+  font-size: 16px;
+}
+
+/* More breathing room between sections — document pages breathe */
+.reader-article section + section {
+  border-top: 1px solid var(--color-hairline);
+  padding-top: 36px;
+  margin-top: 36px;
+}
+
+/* ── Prose font scale ────────────────────────────────────────────────────
+   .reader-article p  → specificity 0-1-1 beats Tailwind .text-sm (0-1-0)
+   .reader-article .text-sm → 0-2-0 covers explicit-class spans/divs       */
+.reader-article p {
+  font-size: 15.5px;
+  line-height: 1.85;
+  margin-bottom: 0.9em;
+}
+.reader-article li {
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+.reader-article h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+.reader-article h3 {
+  font-size: 16.5px;
+  font-weight: 600;
+}
+.reader-article .text-sm {
+  font-size: 15px;
+}
+.reader-article .text-xs {
+  font-size: 12px;
+}
+
+/* Flatten card corners — document feel, not mobile-app feel */
+.reader-article .rounded-xl,
+.reader-article .rounded-lg {
+  border-radius: 4px;
+}
+.reader-article .rounded-r-lg {
+  border-radius: 0 4px 4px 0;
+}
+
+/* ── Bottom section ──────────────────────────────────────────────────── */
+
+.reader-bottom {
+  border-top: 1px solid var(--color-hairline);
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reader-complete-card {
+  padding: 24px 28px;
+  border: 1px solid var(--color-hairline);
+  margin-bottom: 32px;
+}
+
+.reader-complete-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  margin: 0 0 6px;
+}
+
+.reader-complete-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin: 0 0 4px;
+}
+
+.reader-complete-sub {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin: 0 0 18px;
+}
+
+.reader-quiz-cta {
+  padding: 24px 28px;
+  border: 1px solid var(--color-hairline);
+  margin-bottom: 32px;
+}
+
+.reader-quiz-cta-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-family: var(--font-ui);
+  margin: 0 0 6px;
+}
+
+.reader-quiz-cta-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin: 0 0 18px;
+}
+
+/* ── Prev / Next navigation ──────────────────────────────────────────── */
+
+.reader-nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* Matches global .primary-cta fill pattern exactly */
+.reader-nav-prev,
+.reader-nav-next {
+  padding: 16px 20px;
+  background: #1a1410;
+  color: #f7f3ea;
+  border: none;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
+}
+.dark .reader-nav-prev,
+.dark .reader-nav-next {
+  background: #e8e8e8;
+  color: #111111;
+}
+.reader-nav-prev:hover,
+.reader-nav-next:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+.dark .reader-nav-prev:hover,
+.dark .reader-nav-next:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+.reader-nav-prev { text-align: left; }
+.reader-nav-next { text-align: right; }
+
+.reader-nav-label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  margin-bottom: 5px;
+  color: rgba(247, 243, 234, 0.5);
+}
+.dark .reader-nav-label {
+  color: rgba(17, 17, 17, 0.45);
+}
+.reader-nav-prev:hover .reader-nav-label,
+.reader-nav-next:hover .reader-nav-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+.reader-nav-next .reader-nav-label {
+  justify-content: flex-end;
+}
+
+.reader-nav-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #f7f3ea;
+  font-family: var(--font-ui);
+  margin: 0;
+}
+.dark .reader-nav-title {
+  color: #111111;
+}
+.reader-nav-prev:hover .reader-nav-title,
+.reader-nav-next:hover .reader-nav-title {
+  color: #ffffff;
+}
+
+/* ── Large-screen scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .reader-layout         { max-width: 1160px; gap: 64px; }
+  .reader-sidebar        { width: 236px; }
+  .reader-column         { max-width: 700px; }
+  .reader-header-title   { font-size: 14px; }
+  .reader-mod-title      { font-size: clamp(26px, 2.4vw, 36px); }
+  .reader-mod-desc       { font-size: 16px; }
+  .reader-complete-title { font-size: 19px; }
+  .reader-quiz-cta-title { font-size: 19px; }
+  .reader-nav-title      { font-size: 14px; }
+  .reader-article p,
+  .reader-article li,
+  .reader-article .text-sm { font-size: 16.5px; }
+  .reader-article h2     { font-size: 21px; }
+  .reader-article h3     { font-size: 17.5px; }
+}

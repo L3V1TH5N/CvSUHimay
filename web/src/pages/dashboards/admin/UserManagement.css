@@ -1,0 +1,503 @@
+/* file path: web/src/pages/dashboards/admin/UserManagement.css */
+/* Scope: UserManagement.jsx only. Do NOT import elsewhere. */
+
+/* ── Page header ─────────────────────────────────────────────── */
+.um-ph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 28px;
+}
+.um-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+.um-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* ── Add User button ─────────────────────────────────────────── */
+.um-create-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 16px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  white-space: nowrap;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+.um-create-btn:hover { background: var(--color-accent); color: #fff; }
+
+/* ── Stats grid ──────────────────────────────────────────────── */
+.um-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: var(--color-hairline);
+  border: 1px solid var(--color-hairline);
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+@media (max-width: 900px) {
+  .um-stat-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .um-stat-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.um-stat-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  background: var(--color-surface);
+}
+.um-stat-val {
+  font-family: var(--font-ui);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-fg);
+  font-variant-numeric: tabular-nums;
+}
+.um-stat-meta {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* ── Controls row ────────────────────────────────────────────── */
+.um-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+/* ── Tab rail ────────────────────────────────────────────────── */
+.um-tab-rail {
+  display: flex;
+  border: 1px solid var(--color-hairline);
+  width: fit-content;
+}
+.um-tab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: none;
+  border-right: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.um-tab-pill:last-child { border-right: 0; }
+.um-tab-pill:hover  { background: var(--color-surface-3); color: var(--color-fg); }
+.um-tab-pill.active { background: var(--color-fg); color: var(--color-bg); }
+
+/* ── Count label ─────────────────────────────────────────────── */
+.um-count-label {
+  font-size: 11px;
+  font-family: var(--font-ui);
+  color: var(--color-fg-subtle);
+  letter-spacing: 0.06em;
+}
+
+/* ── Status filter ───────────────────────────────────────────── */
+.um-status-select {
+  height: 36px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 140ms ease;
+}
+.um-status-select:focus { border-color: var(--color-fg-muted); }
+
+/* ── Search ──────────────────────────────────────────────────── */
+.um-search-bar {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  outline: none;
+  width: 240px;
+  margin-left: auto;
+  transition: border-color 140ms ease;
+}
+.um-search-bar::placeholder { color: var(--color-fg-subtle); }
+.um-search-bar:focus { border-color: var(--color-fg-muted); }
+
+/* ── Table ───────────────────────────────────────────────────── */
+.um-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+}
+.um-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+  font-family: var(--font-ui);
+}
+.um-table thead tr { background: var(--color-surface-3); }
+.um-table th {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-hairline);
+  white-space: nowrap;
+}
+.um-table th.um-th-name { text-align: left; }
+.um-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--color-hairline);
+  vertical-align: middle;
+  text-align: center;
+}
+.um-table tbody tr { transition: background 100ms ease; }
+.um-table tbody tr:hover td { background: var(--color-surface-3); }
+
+/* User cell — flex on div, not td */
+.um-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+.um-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-hairline);
+  color: var(--color-fg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11px;
+  font-family: var(--font-ui);
+  flex-shrink: 0;
+}
+.um-user-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-fg);
+  line-height: 1.3;
+}
+.um-user-email {
+  font-size: 11.5px;
+  color: var(--color-fg-subtle);
+  line-height: 1.3;
+}
+
+/* Table utility cells */
+.um-td-center  { text-align: center; }
+.um-td-muted   { color: var(--color-fg-muted); font-size: 12.5px; }
+.um-td-date    { white-space: nowrap; }
+
+/* Actions cell */
+.um-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.um-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  transition: color 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+.um-action-btn:hover {
+  color: var(--color-accent);
+  border-color: var(--color-hairline);
+  background: var(--color-surface-3);
+}
+.um-action-btn--danger:hover {
+  color: var(--color-error, #dc2626);
+  border-color: color-mix(in srgb, var(--color-error, #dc2626) 30%, transparent);
+  background: color-mix(in srgb, var(--color-error, #dc2626) 6%, transparent);
+}
+
+/* ── Status badge ────────────────────────────────────────────── */
+.um-badge {
+  display: inline-block;
+  padding: 2px 7px;
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+}
+.um-badge--active    { background: color-mix(in srgb, var(--color-accent) 14%, transparent); color: var(--color-accent); }
+.um-badge--pending   { background: color-mix(in srgb, #d97706 10%, transparent); color: #d97706; }
+.um-badge--rejected  { background: color-mix(in srgb, var(--color-error, #dc2626) 10%, transparent); color: var(--color-error, #dc2626); }
+.um-badge--suspended { background: var(--color-surface-3); color: var(--color-fg-muted); }
+
+/* ── Empty state ─────────────────────────────────────────────── */
+.um-empty {
+  padding: 72px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.um-empty-icon {
+  color: var(--color-fg-subtle);
+  line-height: 0;
+  margin-bottom: 4px;
+}
+.um-empty-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin: 0;
+}
+.um-empty-sub {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  max-width: 320px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ── Pagination ──────────────────────────────────────────────── */
+.um-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-family: var(--font-ui);
+}
+.um-pagination-info {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  letter-spacing: 0.04em;
+}
+.um-pagination-btns { display: flex; gap: 8px; }
+.um-pagination-btn {
+  padding: 7px 16px;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  font-family: var(--font-ui);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  transition: border-color 140ms ease, color 140ms ease;
+}
+.um-pagination-btn:hover:not(:disabled) { border-color: var(--color-fg); color: var(--color-fg); }
+.um-pagination-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+/* ── Modal ───────────────────────────────────────────────────── */
+.um-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 40;
+  animation: um-fade 180ms ease;
+}
+@keyframes um-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.um-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  width: calc(100% - 32px);
+  max-width: 420px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  animation: um-modal-in 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.um-modal--sm { max-width: 380px; }
+@keyframes um-modal-in {
+  from { opacity: 0; transform: translate(-50%, calc(-50% + 8px)); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+.um-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--color-hairline);
+  flex-shrink: 0;
+}
+.um-modal-title {
+  font-family: var(--font-ui);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-fg);
+  letter-spacing: -0.01em;
+}
+.um-modal-close {
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  line-height: 0;
+  transition: color 120ms ease;
+}
+.um-modal-close:hover { color: var(--color-fg); }
+
+.um-modal-body {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.um-modal-body--center { align-items: center; text-align: center; }
+.um-modal-hint {
+  font-size: 12px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+  margin: 0;
+}
+.um-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-hairline);
+  flex-shrink: 0;
+}
+.um-modal-field { display: flex; flex-direction: column; gap: 6px; }
+.um-modal-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+}
+.um-modal-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  outline: none;
+  transition: border-color 140ms ease;
+}
+.um-modal-input:focus { border-color: var(--color-fg); }
+
+.um-temp-password {
+  font-family: monospace;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--color-surface-3);
+  padding: 14px 20px;
+  border: 1px solid var(--color-hairline);
+  margin: 6px 0;
+}
+
+/* ── Modal buttons ───────────────────────────────────────────── */
+.um-modal-btn {
+  padding: 9px 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  border: 1px solid var(--color-hairline);
+  background: none;
+  color: var(--color-fg-muted);
+  transition: border-color 140ms ease, color 140ms ease;
+}
+.um-modal-btn:hover { border-color: var(--color-fg-muted); color: var(--color-fg); }
+.um-modal-btn--primary {
+  background: var(--color-fg);
+  color: var(--color-bg);
+  border-color: var(--color-fg);
+}
+.um-modal-btn--primary:hover { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+.um-modal-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .um-controls   { gap: 10px; }
+  .um-search-bar { width: 100%; margin-left: 0; }
+  .um-tab-rail   { flex-wrap: wrap; width: 100%; }
+}
+@media (max-width: 640px) {
+  .um-ph-title    { font-size: 28px; }
+  .um-status-select { width: 100%; }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .um-ph-title    { font-size: 44px; }
+  .um-stat-val    { font-size: 32px; }
+  .um-table       { font-size: 15px; }
+  .um-table th    { font-size: 11px; }
+  .um-user-name   { font-size: 15px; }
+  .um-user-email  { font-size: 13px; }
+  .um-empty-title { font-size: 21px; }
+  .um-empty-sub   { font-size: 15px; }
+}

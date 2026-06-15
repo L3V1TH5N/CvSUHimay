@@ -1,0 +1,457 @@
+/* file path: web/src/pages/dashboards/instructor/Settings.css
+   Scope: Settings.jsx only. Do NOT import elsewhere. */
+
+/* ── Page shell ─────────────────────────────────────────────────────────── */
+.settings-page {
+  padding: 32px;
+  min-height: 100%;
+  background: var(--color-bg);
+}
+
+@media (min-width: 1024px) {
+  .settings-page { padding: 40px; }
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.settings-header {
+  padding-bottom: 16px;
+  border-bottom: var(--rule-strong-width) solid var(--color-fg);
+  margin-bottom: 28px;
+}
+
+.settings-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+}
+
+.settings-subtitle {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  margin-top: 7px;
+}
+
+/* ── Two-column layout ──────────────────────────────────────────────────── */
+.settings-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .settings-layout {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* ── Sidebar ────────────────────────────────────────────────────────────── */
+.settings-sidebar {
+  width: 176px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-hairline);
+}
+
+@media (max-width: 768px) {
+  .settings-sidebar {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.settings-nav-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 10px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-fg-muted);
+  border: none;
+  border-bottom: 1px solid var(--color-hairline);
+  border-left: 2px solid transparent;
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: color 120ms ease, background-color 120ms ease;
+  white-space: nowrap;
+}
+
+.settings-nav-link:last-child {
+  border-bottom: 0;
+}
+
+.settings-nav-link:hover {
+  color: var(--color-fg);
+  background: var(--color-surface-3);
+}
+
+.settings-nav-link--active {
+  color: var(--color-fg);
+  background: var(--color-surface-3);
+  border-left-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .settings-sidebar { border: none; border-bottom: 1px solid var(--color-hairline); }
+  .settings-nav-link {
+    border-bottom: 2px solid transparent;
+    border-left: none;
+    border-right: 1px solid var(--color-hairline);
+    flex: 1;
+    text-align: center;
+  }
+  .settings-nav-link:last-child { border-right: 0; }
+  .settings-nav-link--active {
+    border-bottom-color: var(--color-accent);
+    border-left: none;
+  }
+}
+
+/* ── Content area ───────────────────────────────────────────────────────── */
+.settings-content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Section card ───────────────────────────────────────────────────────── */
+.settings-section {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+}
+
+.settings-section-header {
+  padding: 18px 22px 16px;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+.settings-section-eyebrow {
+  font-size: 10px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  margin-bottom: 4px;
+}
+
+.settings-section-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  letter-spacing: -0.01em;
+}
+
+.settings-section-desc {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  margin-top: 2px;
+  font-family: var(--font-ui);
+}
+
+.settings-section-body {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Avatar ─────────────────────────────────────────────────────────────── */
+.settings-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.settings-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.settings-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #04510e 0%, #076b15 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.settings-avatar-initials {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-ui);
+  user-select: none;
+}
+
+.settings-avatar-btn {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 120ms ease;
+  padding: 0;
+}
+
+.settings-avatar-btn:hover:not(:disabled) {
+  background: var(--color-surface-3);
+}
+
+.settings-avatar-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.settings-avatar-btn-icon {
+  width: 11px;
+  height: 11px;
+  color: var(--color-fg-muted);
+}
+
+.settings-avatar-hint {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+/* ── Form fields ────────────────────────────────────────────────────────── */
+.settings-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .settings-fields { grid-template-columns: 1fr; }
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.settings-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+  font-family: var(--font-ui);
+}
+
+.settings-input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  background: var(--color-surface);
+  color: var(--color-fg);
+  font-size: 13px;
+  font-family: var(--font-ui);
+  outline: none;
+  transition: border-color 120ms ease, box-shadow 120ms ease;
+}
+
+.settings-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(4, 81, 14, 0.1);
+}
+
+.settings-input--disabled {
+  background: var(--color-surface-3);
+  color: var(--color-fg-subtle);
+  cursor: not-allowed;
+}
+
+/* ── Actions ────────────────────────────────────────────────────────────── */
+.settings-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--color-hairline);
+}
+
+.settings-btn-primary {
+  padding: 10px 20px;
+  background: var(--color-fg);
+  color: var(--color-bg);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 200ms ease, color 200ms ease, opacity 140ms ease;
+}
+
+.settings-btn-primary:hover:not(:disabled) {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.settings-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings-btn-ghost {
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  color: var(--color-fg-muted);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: border-color 140ms ease, color 140ms ease;
+}
+
+.settings-btn-ghost:hover {
+  border-color: var(--color-fg);
+  color: var(--color-fg);
+}
+
+/* ── Row (Appearance + Session) ─────────────────────────────────────────── */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.settings-row-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+}
+
+.settings-row-hint {
+  font-size: 11px;
+  color: var(--color-fg-subtle);
+  margin-top: 2px;
+  font-family: var(--font-ui);
+}
+
+/* ── Toggle ─────────────────────────────────────────────────────────────── */
+.settings-toggle {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  border-radius: 99px;
+  background: var(--color-surface-3);
+  border: 1px solid var(--color-hairline);
+  cursor: pointer;
+  transition: background 200ms ease, border-color 200ms ease;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.settings-toggle--on {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.settings-toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
+}
+
+.settings-toggle--on .settings-toggle-thumb {
+  transform: translateX(18px);
+}
+
+/* ── Danger button ───────────────────────────────────────────────────────── */
+.settings-btn-danger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: none;
+  border: 1px solid var(--color-hairline);
+  border-radius: 0;
+  color: var(--color-fg-muted);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: border-color 140ms ease, color 140ms ease, background-color 140ms ease;
+  flex-shrink: 0;
+}
+
+.settings-btn-danger:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.settings-btn-icon {
+  width: 13px;
+  height: 13px;
+}
+
+/* ── Spin animation ─────────────────────────────────────────────────────── */
+@keyframes settings-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.settings-spin {
+  animation: settings-spin 1s linear infinite;
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .settings-title        { font-size: 44px; }
+  .settings-subtitle     { font-size: 15px; }
+  .settings-section-title { font-size: 16px; }
+  .settings-section-desc { font-size: 14px; }
+  .settings-row-label    { font-size: 15px; }
+  .settings-input        { font-size: 15px; }
+}

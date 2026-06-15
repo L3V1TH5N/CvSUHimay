@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "What makes bangus (milkfish) deboning particularly challenging?",
+    "option_a": "It has many densely packed rib bones",
+    "option_b": "It has complex Y-shaped intermuscular bones",
+    "option_c": "It has a thick and rigid backbone structure",
+    "option_d": "It has sharp dorsal and anal fin bones",
+    "correct_answer": "B",
+    "explanation": "Bangus is notorious for its Y-shaped intermuscular spines (Y-bones) embedded between muscle layers."
+  },
+  {
+    "id": 2,
+    "question": "What is the first step in the traditional Filipino bangus deboning method?",
+    "option_a": "Remove the head",
+    "option_b": "Split down the dorsal (back) side",
+    "option_c": "Remove all fins",
+    "option_d": "Scale the fish",
+    "correct_answer": "C",
+    "explanation": "First, trim all fins and remove the anal fin by cutting around the base and pulling forward."
+  },
+  {
+    "id": 3,
+    "question": "What does \"butterfly cut\" mean in bangus deboning?",
+    "option_a": "Cutting the fish into two separate wing portions",
+    "option_b": "Splitting the fish so it lays open in one piece",
+    "option_c": "Removing the Y-shaped bones from the lateral line",
+    "option_d": "A technique for removing fins and anal bones",
+    "correct_answer": "B",
+    "explanation": "Butterfly cut means splitting the fish down the dorsal side so it lays open like a butterfly, connected by belly skin."
+  },
+  {
+    "id": 4,
+    "question": "Why is patience essential when deboning bangus?",
+    "option_a": "To prevent injury from sharp bone fragments",
+    "option_b": "To ensure complete bone removal without breaking fragments",
+    "option_c": "To keep the flesh intact and undamaged",
+    "option_d": "To maintain the overall quality of the product",
+    "correct_answer": "B",
+    "explanation": "Patience ensures complete bone removal without breaking bones, which would leave dangerous fragments."
+  },
+  {
+    "id": 5,
+    "question": "How long does bangus deboning typically take for experienced processors?",
+    "option_a": "5-10 minutes",
+    "option_b": "15-20 minutes",
+    "option_c": "30-45 minutes",
+    "option_d": "60-90 minutes",
+    "correct_answer": "C",
+    "explanation": "Experienced processors take 30-45 minutes per fish; the process requires careful, methodical work."
+  },
+  {
+    "id": 6,
+    "question": "What is the correct technique for removing Y-bones?",
+    "option_a": "Carefully cut along each spine with a filleting knife",
+    "option_b": "Pull them out with forceps in the direction they naturally grow",
+    "option_c": "Snap each spine into segments to ease removal",
+    "option_d": "Pull them straight upward with kitchen scissors",
+    "correct_answer": "B",
+    "explanation": "Make a superficial guide cut, then use forceps to pull Y-bones from head to tail in their natural direction."
+  },
+  {
+    "id": 7,
+    "question": "Where are Y-bones located in bangus?",
+    "option_a": "Along the dorsal fin bone section only",
+    "option_b": "Along the backbone and rib bone attachment sites",
+    "option_c": "Along dorsal, ventral, and lateral line sections",
+    "option_d": "Along the ventral anal fin section only",
+    "correct_answer": "C",
+    "explanation": "Y-bones run along the dorsal (back) muscle, ventral (belly) side, and lateral line."
+  },
+  {
+    "id": 8,
+    "question": "What is \"Rellenong Bangus\"?",
+    "option_a": "Grilled bangus belly",
+    "option_b": "Stuffed bangus with vegetables",
+    "option_c": "Fried bangus",
+    "option_d": "Smoked bangus",
+    "correct_answer": "B",
+    "explanation": "Rellenong Bangus is stuffed bangus with vegetables and raisins, a popular Filipino dish requiring deboned fish."
+  },
+  {
+    "id": 9,
+    "question": "Why must the fish \"lay open like a butterfly\" remain in one piece?",
+    "option_a": "For more convenient refrigerated storage purposes",
+    "option_b": "To maintain the cavity for stuffing",
+    "option_c": "For better visual presentation and display purposes",
+    "option_d": "To preserve natural moisture and freshness longer",
+    "correct_answer": "B",
+    "explanation": "Keeping the butterfly shape intact maintains the cavity structure for stuffing in dishes like Rellenong Bangus."
+  },
+  {
+    "id": 10,
+    "question": "What indicates a professionally deboned bangus?",
+    "option_a": "50% bone removal, torn skin, and strong fishy odor",
+    "option_b": "100% bone removal, intact flesh, clean appearance",
+    "option_c": "Skin removed, fish cut in portions, no odor",
+    "option_d": "Bones broken small, skin separated, flesh damaged",
+    "correct_answer": "B",
+    "explanation": "Professional deboned bangus should have 100% bone removal, intact flesh with minimal damage, and clean appearance."
+  },
+  {
+    "id": 11,
+    "question": "Why is deboning done to improve bangus acceptability?",
+    "option_a": "Consumers find whole bony fish too difficult to eat",
+    "option_b": "Fish without bones cooks faster and more evenly",
+    "option_c": "People, especially children, object to eating bony fish",
+    "option_d": "Deboned fish stays fresh longer in cold storage",
+    "correct_answer": "C",
+    "explanation": "Milkfish is a spiny/bony fish, and people especially children object to eating it. Deboning improves acceptability to a wider range of consumers."
+  },
+  {
+    "id": 12,
+    "question": "How much higher do deboned bangus prices command in the market?",
+    "option_a": "10-20% higher",
+    "option_b": "50% higher",
+    "option_c": "2-3x higher",
+    "option_d": "5x higher",
+    "correct_answer": "C",
+    "explanation": "Deboned bangus commands 2-3 times higher prices than whole bangus due to the labor and skill required."
+  },
+  {
+    "id": 13,
+    "question": "Which type of bone in bangus is described as the \"most challenging\"?",
+    "option_a": "Central vertebral backbone",
+    "option_b": "Curved visceral rib bones",
+    "option_c": "Supportive dorsal fin bones",
+    "option_d": "Y-shaped intermuscular spines",
+    "correct_answer": "D",
+    "explanation": "Y-shaped intermuscular spines are the most challenging - they are deeply embedded and must be removed carefully to avoid breaking."
+  },
+  {
+    "id": 14,
+    "question": "What is the function of rib bones in bangus?",
+    "option_a": "Support swimming",
+    "option_b": "Protect the viscera",
+    "option_c": "Aid in digestion",
+    "option_d": "Store nutrients",
+    "correct_answer": "B",
+    "explanation": "Rib bones are curved bones attached to the backbone that protect the viscera (internal organs)."
+  },
+  {
+    "id": 15,
+    "question": "What tool is essential for removing rib bones and intermuscular spines?",
+    "option_a": "Kitchen scissors for trimming and cutting fins",
+    "option_b": "A sharp filleting knife blade and handle",
+    "option_c": "Forceps or fish bone tweezers",
+    "option_d": "A plastic or wooden cutting board surface",
+    "correct_answer": "C",
+    "explanation": "Forceps or fish bone tweezers are essential for carefully pulling out rib bones and intermuscular spines."
+  },
+  {
+    "id": 16,
+    "question": "Why is the anal fin removed first in bangus deboning?",
+    "option_a": "It contains spines that contaminate the flesh during cutting",
+    "option_b": "It eliminates a cluster of troublesome bones",
+    "option_c": "It improves the final presentation of the product appearance",
+    "option_d": "It is required for certified product processing standards",
+    "correct_answer": "B",
+    "explanation": "Removing the anal fin early eliminates a cluster of troublesome bones that would be harder to remove later."
+  },
+  {
+    "id": 17,
+    "question": "Why is bangus split down the dorsal (back) side instead of the belly?",
+    "option_a": "To access the backbone more easily from above",
+    "option_b": "To keep the fish cavity intact for stuffing",
+    "option_c": "To make the fish lay flat for easier processing",
+    "option_d": "To separate the dorsal and ventral muscles cleanly",
+    "correct_answer": "B",
+    "explanation": "Splitting from the back keeps the fish cavity intact and connected by belly skin, essential for stuffed preparations like Rellenong Bangus."
+  },
+  {
+    "id": 18,
+    "question": "When removing the backbone, what should the knife position be?",
+    "option_a": "Vertical (perpendicular to the cutting surface)",
+    "option_b": "Diagonal (angled 45 degrees to the board)",
+    "option_c": "Horizontal (parallel to the cutting board)",
+    "option_d": "Variable (adjusted to match the bone depth)",
+    "correct_answer": "C",
+    "explanation": "Hold the knife horizontally (parallel to the cutting board) and carefully cut along the backbone."
+  },
+  {
+    "id": 19,
+    "question": "What should guide your knife when removing the backbone?",
+    "option_a": "The visible color marks along the skin surface",
+    "option_b": "The resistance of the backbone",
+    "option_c": "The skin pattern lines along the top surface",
+    "option_d": "The speed and rhythm of your cutting motion",
+    "correct_answer": "B",
+    "explanation": "Let the resistance of the backbone guide your knife, using smooth, controlled strokes."
+  },
+  {
+    "id": 20,
+    "question": "Which step is described as the \"most time-consuming\" in bangus deboning?",
+    "option_a": "Removing the anal fin and base fin bones",
+    "option_b": "Splitting the fish along the dorsal side line",
+    "option_c": "Removing the backbone along its entire length",
+    "option_d": "Removing the rib bones with forceps",
+    "correct_answer": "D",
+    "explanation": "Removing rib bones with forceps is the most time-consuming step - you must work systematically and ensure each rib is completely removed."
+  },
+  {
+    "id": 21,
+    "question": "In what direction should rib bones be pulled when removing them?",
+    "option_a": "Straight upward perpendicular to the fish surface",
+    "option_b": "In the direction the bones naturally point",
+    "option_c": "Always directly toward the tail of the fish",
+    "option_d": "In a circular twisting motion while applying pressure",
+    "correct_answer": "B",
+    "explanation": "Pull rib bones in the direction they naturally point, working systematically from head to tail."
+  },
+  {
+    "id": 22,
+    "question": "What is a \"superficial cut slit\" used for in bangus deboning?",
+    "option_a": "To loosen and separate the outer dorsal skin layer",
+    "option_b": "To access and expose embedded intermuscular spines",
+    "option_c": "To drain residual blood from the exposed flesh area",
+    "option_d": "To mark the rib bone extraction pathway clearly",
+    "correct_answer": "B",
+    "explanation": "A superficial cut slit is made along the muscle dent to access and remove intermuscular spines embedded between muscles."
+  },
+  {
+    "id": 23,
+    "question": "Where is the lateral line located on bangus?",
+    "option_a": "The raised ridge running along the dorsal top",
+    "option_b": "The pale stripe running along the belly side",
+    "option_c": "The dark line running along the side",
+    "option_d": "The colored band near the caudal tail fin",
+    "correct_answer": "C",
+    "explanation": "The lateral line is the dark line running along the side of the fish where the most challenging Y-shaped spines are located."
+  },
+  {
+    "id": 24,
+    "question": "Why are Y-shaped spines considered dangerous if left in the meat?",
+    "option_a": "They are poisonous",
+    "option_b": "They pose choking hazards",
+    "option_c": "They cause allergies",
+    "option_d": "They spoil quickly",
+    "correct_answer": "B",
+    "explanation": "Y-shaped spines must be removed completely as they pose choking hazards if left in the meat."
+  },
+  {
+    "id": 25,
+    "question": "What should be done before packaging deboned bangus?",
+    "option_a": "Marinate the deboned fish in vinegar and spice mixture",
+    "option_b": "Run fingers along entire fillet to check for remaining bones",
+    "option_c": "Freeze the packaged fish for at least twelve hours first",
+    "option_d": "Add salt and seasoning before placing in plastic bags",
+    "correct_answer": "B",
+    "explanation": "Before packaging, run your fingers along the entire fillet one last time to feel for any remaining bones."
+  },
+  {
+    "id": 26,
+    "question": "When should deboned bangus be frozen if not used immediately?",
+    "option_a": "Within 1 week",
+    "option_b": "Within 3 days",
+    "option_c": "Within 24 hours",
+    "option_d": "After 2 days",
+    "correct_answer": "C",
+    "explanation": "Freeze immediately if not using within 24 hours to maintain quality and safety."
+  },
+  {
+    "id": 27,
+    "question": "What percentage of bone removal is required for professional quality?",
+    "option_a": "80%",
+    "option_b": "90%",
+    "option_c": "95%",
+    "option_d": "100%",
+    "correct_answer": "D",
+    "explanation": "Professional quality requires 100% bone removal - no bones should remain in the finished product."
+  },
+  {
+    "id": 28,
+    "question": "What is a quality indicator for professionally deboned bangus?",
+    "option_a": "Skin fully removed with minimal tearing damage",
+    "option_b": "Flesh intact with minimal tears",
+    "option_c": "Fish cut into uniform serving portions cleanly",
+    "option_d": "Strong fishy smell throughout the finished product",
+    "correct_answer": "B",
+    "explanation": "Quality indicators include flesh intact with minimal tears, along with 100% bone removal and clean appearance."
+  },
+  {
+    "id": 29,
+    "question": "What is a common defect to avoid in deboned bangus?",
+    "option_a": "Having too much meat left on the fillet",
+    "option_b": "Broken bone fragments left in meat",
+    "option_c": "Having very thick and uniform skin coverage",
+    "option_d": "Having very fresh and clean-smelling fish flesh",
+    "correct_answer": "B",
+    "explanation": "Broken bone fragments left in meat is a serious defect - bones must be removed completely without breaking."
+  },
+  {
+    "id": 30,
+    "question": "What should you focus on when pulling bones to avoid breaking them?",
+    "option_a": "Pull as quickly as possible to minimize processing time",
+    "option_b": "Steady hand movements and proper forceps grip",
+    "option_c": "Apply maximum gripping force firmly on the bone",
+    "option_d": "Twist the bone in circles while pulling outward",
+    "correct_answer": "B",
+    "explanation": "Focus on steady hand movements, proper forceps grip at the bone base, and pulling in the direction bones naturally point."
+  },
+  {
+    "id": 31,
+    "question": "What is the main ingredient mixture for Rellenong Bangus stuffing?",
+    "option_a": "Sautéed garlic, vinegar, spices, and tamarind broth",
+    "option_b": "Flaked bangus meat, vegetables, raisins, and eggs",
+    "option_c": "Sliced onions, chili peppers, garlic, and spices",
+    "option_d": "Garlic, vinegar, salt, tamarind, and chili peppers",
+    "correct_answer": "B",
+    "explanation": "Rellenong Bangus stuffing includes flaked bangus meat, sautéed vegetables, raisins, green peas, beaten eggs as binder, and seasonings."
+  },
+  {
+    "id": 32,
+    "question": "What is \"Daing na Bangus\"?",
+    "option_a": "Bangus raw-seasoned in soy sauce then served cold",
+    "option_b": "Bangus marinated in vinegar, garlic, and spices, then fried",
+    "option_c": "Bangus simmered slowly in light tamarind broth",
+    "option_d": "Bangus grilled whole with salt and fresh spices",
+    "correct_answer": "B",
+    "explanation": "Daing na Bangus is bangus marinated in vinegar, garlic, and spices, then fried - a popular Filipino preparation."
+  },
+  {
+    "id": 33,
+    "question": "Why should beginners practice on larger bangus first?",
+    "option_a": "They are less expensive and more easily available",
+    "option_b": "They are easier to handle",
+    "option_c": "They have fewer bones",
+    "option_d": "They have better flavor and taste when cooked",
+    "correct_answer": "B",
+    "explanation": "Larger bangus are easier to handle for beginners learning the deboning technique."
+  },
+  {
+    "id": 34,
+    "question": "What is the scientific name of the most common tilapia variety?",
+    "option_a": "Chanos chanos",
+    "option_b": "Oreochromis niloticus",
+    "option_c": "Scomber scombrus",
+    "option_d": "Clarias batrachus",
+    "correct_answer": "B",
+    "explanation": "Oreochromis niloticus is the scientific name for the most common tilapia variety."
+  },
+  {
+    "id": 35,
+    "question": "How does tilapia bone structure compare to bangus?",
+    "option_a": "More complex with extra intermuscular bone layers",
+    "option_b": "Equally complex with similar intermuscular spines",
+    "option_c": "Simpler with fewer intermuscular bones",
+    "option_d": "Completely boneless with no skeletal structure present",
+    "correct_answer": "C",
+    "explanation": "Tilapia has a simpler bone structure with fewer intermuscular bones compared to bangus."
+  },
+  {
+    "id": 36,
+    "question": "According to research, what is tilapia shelf life with a 4-hour icing delay?",
+    "option_a": "1 day",
+    "option_b": "16 days",
+    "option_c": "20 days",
+    "option_d": "30 days",
+    "correct_answer": "C",
+    "explanation": "A 4-hour delay in icing reduces tilapia shelf life to 20 days, showing moderate quality loss."
+  },
+  {
+    "id": 37,
+    "question": "What happens to tilapia shelf life with a 12-hour icing delay?",
+    "option_a": "Reduced to only 1 day",
+    "option_b": "Reduced to 5 days",
+    "option_c": "Reduced to 10 days",
+    "option_d": "No significant change",
+    "correct_answer": "A",
+    "explanation": "A 12-hour delay in icing drastically reduces tilapia shelf life to only 1 day, showing severe quality degradation."
+  },
+  {
+    "id": 38,
+    "question": "What is the key takeaway about tilapia icing?",
+    "option_a": "Ice within 24 hours",
+    "option_b": "Ice within 12 hours",
+    "option_c": "Ice immediately after harvest",
+    "option_d": "Icing is optional",
+    "correct_answer": "C",
+    "explanation": "Tilapia must be iced immediately after harvest - even a 4-hour delay significantly reduces shelf life."
+  },
+  {
+    "id": 39,
+    "question": "What style is bangus typically processed into?",
+    "option_a": "Steak-cut style",
+    "option_b": "Single fillet style",
+    "option_c": "Butterfly style",
+    "option_d": "Chunk-cut style",
+    "correct_answer": "C",
+    "explanation": "Bangus is typically processed into butterfly style where both sides remain connected by belly skin."
+  },
+  {
+    "id": 40,
+    "question": "What style is tilapia typically processed into?",
+    "option_a": "Butterfly style",
+    "option_b": "Single fillets",
+    "option_c": "Whole only",
+    "option_d": "Ground meat",
+    "correct_answer": "B",
+    "explanation": "Tilapia is usually processed into standard single fillets, unlike bangus which is butterflied."
+  },
+  {
+    "id": 41,
+    "question": "What skill level is required for bangus deboning?",
+    "option_a": "Beginner",
+    "option_b": "Intermediate",
+    "option_c": "Advanced",
+    "option_d": "Expert",
+    "correct_answer": "D",
+    "explanation": "Bangus deboning requires expert skill level due to the complex Y-shaped intermuscular spines."
+  },
+  {
+    "id": 42,
+    "question": "What skill level is required for tilapia filleting?",
+    "option_a": "Beginner",
+    "option_b": "Intermediate",
+    "option_c": "Advanced",
+    "option_d": "Expert",
+    "correct_answer": "B",
+    "explanation": "Tilapia filleting requires intermediate skill level due to its simpler bone structure."
+  },
+  {
+    "id": 43,
+    "question": "How long does tilapia filleting typically take per fish?",
+    "option_a": "1-3 minutes",
+    "option_b": "5-10 minutes",
+    "option_c": "15-20 minutes",
+    "option_d": "30-45 minutes",
+    "correct_answer": "B",
+    "explanation": "Tilapia filleting takes 5-10 minutes per fish, much faster than bangus which takes 30-45 minutes."
+  },
+  {
+    "id": 44,
+    "question": "How much higher is the market value for deboned tilapia?",
+    "option_a": "50% higher",
+    "option_b": "1.5-2x higher",
+    "option_c": "2-3x higher",
+    "option_d": "5x higher",
+    "correct_answer": "B",
+    "explanation": "Deboned tilapia commands 1.5-2x higher prices, less than bangus due to simpler processing."
+  },
+  {
+    "id": 45,
+    "question": "Which aspect is more critical for tilapia compared to bangus?",
+    "option_a": "Scaling technique (tail-to-head vs head-to-tail direction)",
+    "option_b": "Bone complexity (simple structure vs Y-shaped spines)",
+    "option_c": "Icing urgency (immediate vs within hours)",
+    "option_d": "Processing time (5-10 minutes vs 30-45 minutes)",
+    "correct_answer": "C",
+    "explanation": "Icing urgency is critical for tilapia (immediate) while it is just important for bangus (within hours)."
+  },
+  {
+    "id": 46,
+    "question": "What should be done when scaling tilapia?",
+    "option_a": "Scrape from head to tail",
+    "option_b": "Scrape from tail to head",
+    "option_c": "Use hot water",
+    "option_d": "Scales don't need removal",
+    "correct_answer": "B",
+    "explanation": "Remove scales by scraping from tail to head, against the direction of scale growth."
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between bangus and tilapia habitat?",
+    "option_a": "Both tilapia and bangus require saltwater conditions",
+    "option_b": "Both tilapia and bangus inhabit freshwater only",
+    "option_c": "Tilapia is freshwater; bangus can live in various waters",
+    "option_d": "Bangus is exclusively freshwater while tilapia is saltwater",
+    "correct_answer": "C",
+    "explanation": "Tilapia is a freshwater species, while milkfish can adapt to various water conditions."
+  },
+  {
+    "id": 48,
+    "question": "What markets does deboned bangus open up?",
+    "option_a": "Local wet markets and supermarkets that sell bangus",
+    "option_b": "Children, elderly, and foreign consumers who avoid bony fish",
+    "option_c": "Upscale restaurants and fine dining venue operators",
+    "option_d": "Export processors and overseas distribution companies",
+    "correct_answer": "B",
+    "explanation": "Deboned bangus opens markets to children, elderly, and foreign consumers who typically avoid bony fish."
+  },
+  {
+    "id": 49,
+    "question": "What should be felt for when checking for remaining pin bones in tilapia?",
+    "option_a": "Soft or mushy spots in the flesh areas",
+    "option_b": "Small bones along the centerline",
+    "option_c": "Cold or warm temperature differences along the fillet",
+    "option_d": "Discoloration or darkened flesh areas in the fillet",
+    "correct_answer": "B",
+    "explanation": "Feel along the fillet centerline for any remaining pin bones - small bones that need to be removed with tweezers."
+  },
+  {
+    "id": 50,
+    "question": "Why is tilapia described as requiring \"quick spoilage\" attention?",
+    "option_a": "It has a thin and easily torn skin layer",
+    "option_b": "It lives in dirty water",
+    "option_c": "It requires immediate icing after harvest",
+    "option_d": "It is always sold frozen",
+    "correct_answer": "C",
+    "explanation": "Tilapia requires immediate icing after harvest due to quick spoilage - even short delays drastically reduce shelf life."
+  }
+]

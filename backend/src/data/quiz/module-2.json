@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "question": "What is a \"drawn fish\"?",
+    "option_a": "Fish with its scales removed",
+    "option_b": "Fish with its entrails removed",
+    "option_c": "Fish cut into cross-sections",
+    "option_d": "Fish with its skin removed",
+    "correct_answer": "B",
+    "explanation": "Drawn fish refers to fish that has been eviscerated or gutted - the entrails removed while keeping everything else intact."
+  },
+  {
+    "id": 2,
+    "question": "What is removed from a \"dressed fish\"?",
+    "option_a": "Head, tail, and fins only",
+    "option_b": "Viscera, head, and tail only",
+    "option_c": "Scales, viscera, fins, head, and tail",
+    "option_d": "Scales, viscera, and head only",
+    "correct_answer": "C",
+    "explanation": "Dressed fish have scales, viscera, fins, head, and tail removed, making them ready to cook."
+  },
+  {
+    "id": 3,
+    "question": "How thick are fish steaks typically cut?",
+    "option_a": "1-2 cm",
+    "option_b": "2-3 cm",
+    "option_c": "3-4 cm",
+    "option_d": "4-5 cm",
+    "correct_answer": "B",
+    "explanation": "Steaks are cross-section slices of a large, dressed fish, usually 2-3 cm thick."
+  },
+  {
+    "id": 4,
+    "question": "What is a butterfly fillet?",
+    "option_a": "Fillet with all pin bones removed",
+    "option_b": "Both sides joined by the uncut belly flesh",
+    "option_c": "One side of the fish, fully separated",
+    "option_d": "Flat fish fillet taken as one piece",
+    "correct_answer": "B",
+    "explanation": "A butterfly fillet is formed by both sides of the fish still joined by the uncut flesh and skin of the belly, opening like a book."
+  },
+  {
+    "id": 5,
+    "question": "What are fish sticks and portions?",
+    "option_a": "Whole small fish left intact for sale",
+    "option_b": "Cross-section slices cut through the backbone",
+    "option_c": "Small uniform rectangles cut from fillets",
+    "option_d": "Fish heads and tails trimmed for stock",
+    "correct_answer": "C",
+    "explanation": "Sticks and portions are small elongated chunks (rectangles) of uniform size cut from the meaty fillet portion."
+  },
+  {
+    "id": 6,
+    "question": "What remains attached in a drawn fish?",
+    "option_a": "Only viscera and stomach contents",
+    "option_b": "Head, tail, scales, and fins",
+    "option_c": "Only the head and tail",
+    "option_d": "Only skin, scales, and fins",
+    "correct_answer": "B",
+    "explanation": "In drawn fish, the head, tail, scales (may or may not be removed), and fins remain attached - only the viscera is removed."
+  },
+  {
+    "id": 7,
+    "question": "What is the typical yield percentage for drawn fish?",
+    "option_a": "~75%",
+    "option_b": "~65%",
+    "option_c": "~50%",
+    "option_d": "~35%",
+    "correct_answer": "A",
+    "explanation": "Drawn fish has approximately 75% yield since only the internal organs are removed."
+  },
+  {
+    "id": 8,
+    "question": "Which preparation method is best for whole fish presentations in restaurants?",
+    "option_a": "Sticks and portions",
+    "option_b": "Fillets",
+    "option_c": "Drawn fish",
+    "option_d": "Dressed fish",
+    "correct_answer": "C",
+    "explanation": "Drawn fish is best for whole fish presentations, especially in traditional cooking methods where the head is prized."
+  },
+  {
+    "id": 9,
+    "question": "What is the first processing step when preparing drawn fish?",
+    "option_a": "Sever the head cleanly behind the gills",
+    "option_b": "Cut from the vent to the gill opening",
+    "option_c": "Clip all fins flush with the fish body",
+    "option_d": "Scrape scales working from tail to head",
+    "correct_answer": "B",
+    "explanation": "The first step is to make a cut from the vent to the gill opening to access the internal organs."
+  },
+  {
+    "id": 10,
+    "question": "What is the main advantage of dressed fish for consumers?",
+    "option_a": "Produces a crispier, more flavorful skin texture",
+    "option_b": "No waste parts left to handle or remove",
+    "option_c": "Retains natural juices for richer, deeper flavor",
+    "option_d": "Stays fresher significantly longer in cold storage",
+    "correct_answer": "B",
+    "explanation": "Dressed fish offers maximum convenience - no waste parts to handle, uniform appearance, and reduces preparation time."
+  },
+  {
+    "id": 11,
+    "question": "What is the typical yield percentage for dressed fish?",
+    "option_a": "~75%",
+    "option_b": "~65%",
+    "option_c": "~50%",
+    "option_d": "~35%",
+    "correct_answer": "B",
+    "explanation": "Dressed fish has approximately 65% yield after removing scales, viscera, fins, head, and tail."
+  },
+  {
+    "id": 12,
+    "question": "Which fish preparation is ideal for grilling large firm fish?",
+    "option_a": "Drawn fish",
+    "option_b": "Sticks and portions",
+    "option_c": "Steaks",
+    "option_d": "Butterfly fillet",
+    "correct_answer": "C",
+    "explanation": "Steaks are ideal for grilling large firm fish because they hold their shape well and cook evenly due to uniform thickness."
+  },
+  {
+    "id": 13,
+    "question": "What does a fish steak contain in its center?",
+    "option_a": "Only flesh",
+    "option_b": "A section of backbone",
+    "option_c": "The stomach cavity",
+    "option_d": "Removed cavity",
+    "correct_answer": "B",
+    "explanation": "Fish steaks contain a section of backbone in the center since they are cross-section slices cut perpendicular to the backbone."
+  },
+  {
+    "id": 14,
+    "question": "Which fish is NOT typically used for steaks?",
+    "option_a": "Tuna",
+    "option_b": "Salmon",
+    "option_c": "Anchovy",
+    "option_d": "Swordfish",
+    "correct_answer": "C",
+    "explanation": "Anchovies are too small for steaks. Steaks are made from large fish like tuna, salmon, swordfish, mahi-mahi, and halibut."
+  },
+  {
+    "id": 15,
+    "question": "Why does the bone in fish steaks add value during cooking?",
+    "option_a": "It makes cutting easier",
+    "option_b": "It adds flavor during cooking",
+    "option_c": "It reduces cooking time",
+    "option_d": "It prevents overcooking",
+    "correct_answer": "B",
+    "explanation": "The bone in steaks adds flavor during cooking, enhancing the overall taste of the dish."
+  },
+  {
+    "id": 16,
+    "question": "What are fillets defined as?",
+    "option_a": "Cross-section slices cut perpendicular to the backbone",
+    "option_b": "Whole fish with head and fins removed",
+    "option_c": "Meaty sides removed from the backbone and ribs",
+    "option_d": "Uniform rectangular portions cut from boneless sections",
+    "correct_answer": "C",
+    "explanation": "Fillets are the meaty sides of the fish removed from the backbone and ribs, practically boneless."
+  },
+  {
+    "id": 17,
+    "question": "What is a cross-cut fillet taken from?",
+    "option_a": "Round fish like salmon",
+    "option_b": "Flat fish like sole",
+    "option_c": "Large fish only",
+    "option_d": "Small fish only",
+    "correct_answer": "B",
+    "explanation": "Cross-cut fillets are from flat fish (e.g., sole, flounder) taken from each side as a single piece."
+  },
+  {
+    "id": 18,
+    "question": "How many single fillets does one round fish typically yield?",
+    "option_a": "One fillet",
+    "option_b": "Two fillets",
+    "option_c": "Three fillets",
+    "option_d": "Four fillets",
+    "correct_answer": "B",
+    "explanation": "Each round fish yields two single fillets - one from each side of the fish."
+  },
+  {
+    "id": 19,
+    "question": "What is a quarter-cut fillet?",
+    "option_a": "One fillet cut into four equal portions",
+    "option_b": "Each side divided into two separate pieces",
+    "option_c": "One-quarter of the total dressed fish weight",
+    "option_d": "A fillet taken from a juvenile or small fish",
+    "correct_answer": "B",
+    "explanation": "Quarter-cut fillet is when the flesh from each side is taken off in two pieces, often separating dorsal and ventral portions."
+  },
+  {
+    "id": 20,
+    "question": "What is the primary advantage of skin-on fillets?",
+    "option_a": "They are easier to package for retail",
+    "option_b": "They cost less to produce per unit",
+    "option_c": "Skin helps hold fillet together during cooking",
+    "option_d": "They look more visually appealing overall",
+    "correct_answer": "C",
+    "explanation": "Skin-on fillets help hold the fillet together during cooking, add flavor, and create crispy texture when seared."
+  },
+  {
+    "id": 21,
+    "question": "What is the typical yield percentage for fillets?",
+    "option_a": "60-70%",
+    "option_b": "50-60%",
+    "option_c": "35-45%",
+    "option_d": "20-30%",
+    "correct_answer": "C",
+    "explanation": "Fillets have a yield of 35-45%, the lowest among preparations because bones, head, and all waste are removed."
+  },
+  {
+    "id": 22,
+    "question": "What makes butterfly fillets perfect for certain dishes?",
+    "option_a": "They cook faster due to their thin profile",
+    "option_b": "Both sides remain joined for stuffing or cooking",
+    "option_c": "They contain absolutely no bones of any kind",
+    "option_d": "They are the simplest fillet type to prepare",
+    "correct_answer": "B",
+    "explanation": "Butterfly fillets remain in one piece connected by belly skin, making them perfect for stuffing or even cooking."
+  },
+  {
+    "id": 23,
+    "question": "What is the standard shape for fish sticks and portions?",
+    "option_a": "Round medallions",
+    "option_b": "Uniform rectangles",
+    "option_c": "Triangular pieces",
+    "option_d": "Irregular shapes",
+    "correct_answer": "B",
+    "explanation": "Fish sticks and portions are cut into uniform rectangles for consistency in commercial applications."
+  },
+  {
+    "id": 24,
+    "question": "Which application is NOT typical for fish sticks and portions?",
+    "option_a": "Fast food restaurants",
+    "option_b": "Fine dining presentations",
+    "option_c": "Fish fingers for retail",
+    "option_d": "Institutional catering",
+    "correct_answer": "B",
+    "explanation": "Fish sticks and portions are used in fast food, retail products, and institutional catering - not fine dining which uses whole fillets."
+  },
+  {
+    "id": 25,
+    "question": "What is a key benefit of standardized fish portions in commercial operations?",
+    "option_a": "They deliver richer and more natural flavor",
+    "option_b": "Consistent cooking times and predictable costs",
+    "option_c": "They carry higher nutritional value per serving",
+    "option_d": "They maintain freshness and quality much longer",
+    "correct_answer": "B",
+    "explanation": "Standardized portions provide consistent cooking times, predictable food costs, and uniform product quality."
+  },
+  {
+    "id": 26,
+    "question": "What is the typical yield percentage for sticks and portions?",
+    "option_a": "60-70%",
+    "option_b": "50-60%",
+    "option_c": "30-40%",
+    "option_d": "20-25%",
+    "correct_answer": "C",
+    "explanation": "Sticks and portions have 30-40% yield due to trimming for uniform shapes and sizes."
+  },
+  {
+    "id": 27,
+    "question": "What skill level is required for preparing drawn fish?",
+    "option_a": "Beginner",
+    "option_b": "Intermediate",
+    "option_c": "Advanced",
+    "option_d": "Professional",
+    "correct_answer": "A",
+    "explanation": "Drawn fish preparation requires only beginner skill level as it involves simple evisceration."
+  },
+  {
+    "id": 28,
+    "question": "What skill level is required for preparing fillets?",
+    "option_a": "Beginner",
+    "option_b": "Intermediate",
+    "option_c": "Advanced",
+    "option_d": "Professional only",
+    "correct_answer": "C",
+    "explanation": "Filleting requires advanced skill to properly separate meat from bones while minimizing waste."
+  },
+  {
+    "id": 29,
+    "question": "What temperature range should fish be kept at during processing?",
+    "option_a": "10-15°C",
+    "option_b": "5-10°C",
+    "option_c": "0-4°C",
+    "option_d": "-5-0°C",
+    "correct_answer": "C",
+    "explanation": "Fish should be kept at 0-4°C during processing to maintain quality and prevent bacterial growth."
+  },
+  {
+    "id": 30,
+    "question": "Why is speed important in fish preparation?",
+    "option_a": "To lower labor costs per processed batch",
+    "option_b": "To reduce handling time and warm-air exposure",
+    "option_c": "To increase the volume of daily output",
+    "option_d": "To extend equipment lifespan and reduce wear",
+    "correct_answer": "B",
+    "explanation": "Speed is important to minimize handling time and reduce exposure to warm air, maintaining fish quality."
+  },
+  {
+    "id": 31,
+    "question": "What is the proper way to clean drawn fish after removing viscera?",
+    "option_a": "Wipe the cavity with a dry clean cloth",
+    "option_b": "Scrape cavity, then rinse with cold water",
+    "option_c": "Submerge in chilled salt water for rinsing",
+    "option_d": "Air dry in the refrigerator before storage",
+    "correct_answer": "B",
+    "explanation": "After removing viscera, scrape out any remaining material from the body cavity, then rinse thoroughly with clean, cold water."
+  },
+  {
+    "id": 32,
+    "question": "Why should knives be kept sharp during fish preparation?",
+    "option_a": "To process more fish per hour efficiently",
+    "option_b": "For clean cuts and better quality",
+    "option_c": "To lessen hand fatigue across long work shifts",
+    "option_d": "To create a more polished final presentation",
+    "correct_answer": "B",
+    "explanation": "Sharp knives provide clean cuts, which improves product quality and reduces flesh damage during preparation."
+  },
+  {
+    "id": 33,
+    "question": "Which preparation method offers the most versatility in cooking methods?",
+    "option_a": "Drawn fish",
+    "option_b": "Steaks",
+    "option_c": "Fillets",
+    "option_d": "Sticks and portions",
+    "correct_answer": "C",
+    "explanation": "Fillets offer the most versatility - they can be used for all cooking methods and are suitable for various cuisines and presentations."
+  },
+  {
+    "id": 34,
+    "question": "What is the main purpose of different fish preparation methods?",
+    "option_a": "To raise sale prices at retail fish counters",
+    "option_b": "To match specific cooking methods and market demands",
+    "option_c": "To eliminate all processing waste from production",
+    "option_d": "To simplify and speed up processing workflows",
+    "correct_answer": "B",
+    "explanation": "Different preparations optimize the product for specific cooking methods, consumer preferences, storage requirements, and market demands."
+  },
+  {
+    "id": 35,
+    "question": "What should be done between processing different fish to maintain hygiene?",
+    "option_a": "Change into clean gloves between each fish",
+    "option_b": "Wipe down all work surfaces between tasks",
+    "option_c": "Sanitize equipment and wash hands",
+    "option_d": "Just rinse tools with water only",
+    "correct_answer": "C",
+    "explanation": "Sanitize equipment between different fish and wash hands frequently to maintain proper hygiene standards."
+  },
+  {
+    "id": 36,
+    "question": "Why are drawn fish popular in Asian-style preparations?",
+    "option_a": "The whole fish is cheaper to source",
+    "option_b": "The fish head is prized for flavor and presentation",
+    "option_c": "Drawn fish cooks faster on high heat",
+    "option_d": "The intact fish is easier to handle",
+    "correct_answer": "B",
+    "explanation": "In Asian cuisine, the fish head is particularly prized, making drawn fish ideal for traditional cooking methods."
+  },
+  {
+    "id": 37,
+    "question": "What cooking method is specifically mentioned as excellent for tuna steaks?",
+    "option_a": "Poaching",
+    "option_b": "Steaming",
+    "option_c": "Grilling",
+    "option_d": "Deep frying",
+    "correct_answer": "C",
+    "explanation": "Tuna is specifically mentioned as excellent for grilling due to its firm texture and flavor profile."
+  },
+  {
+    "id": 38,
+    "question": "What advantage does pan-searing offer for fish steaks?",
+    "option_a": "Reduces total cooking time with lower heat",
+    "option_b": "High heat creates a nice outer crust",
+    "option_c": "Requires less added fat or cooking oil",
+    "option_d": "Leaves a cleaner pan and easier cleanup",
+    "correct_answer": "B",
+    "explanation": "Pan-searing uses high heat to create a nice crust on fish steaks, enhancing texture and flavor."
+  },
+  {
+    "id": 39,
+    "question": "Why is uniform thickness important in fish steaks?",
+    "option_a": "For attractive presentation only",
+    "option_b": "Ensures even cooking throughout",
+    "option_c": "Makes cutting easier",
+    "option_d": "Reduces waste",
+    "correct_answer": "B",
+    "explanation": "Uniform thickness ensures even cooking throughout the steak, preventing overcooking or undercooking portions."
+  },
+  {
+    "id": 40,
+    "question": "Which characteristic makes swordfish good for steaks?",
+    "option_a": "Its low market price makes it affordable",
+    "option_b": "Firm texture holds up well",
+    "option_c": "It contains very few pin bones",
+    "option_d": "It cooks through quickly without drying out",
+    "correct_answer": "B",
+    "explanation": "Swordfish has a firm texture that holds up well during cooking, making it ideal for steaks."
+  },
+  {
+    "id": 41,
+    "question": "What is the advantage of quarter-cut fillets for pricing?",
+    "option_a": "Ensures every piece is priced the same",
+    "option_b": "Enables separate pricing for dorsal and ventral cuts",
+    "option_c": "Lowers the overall cost of each portion",
+    "option_d": "Makes it easier to calculate total product value",
+    "correct_answer": "B",
+    "explanation": "Quarter-cut fillets allow different pricing for premium (dorsal) vs. standard (ventral) cuts, maximizing value."
+  },
+  {
+    "id": 42,
+    "question": "Why are skinless fillets preferred by many consumers?",
+    "option_a": "Lower cost compared to skin-on fillets",
+    "option_b": "More elegant presentation and easier to eat",
+    "option_c": "Longer shelf life than skin-on counterparts",
+    "option_d": "More intense natural flavor when pan-seared",
+    "correct_answer": "B",
+    "explanation": "Skinless fillets offer more elegant presentation and are easier to eat, making them preferred by many consumers."
+  },
+  {
+    "id": 43,
+    "question": "What is the primary use of fish bones and heads saved from filleting?",
+    "option_a": "Feeding farm animals or aquaculture stock",
+    "option_b": "Making fish stock from bones and heads",
+    "option_c": "Composting as fertilizer for garden soil",
+    "option_d": "Disposing of in organic waste collection",
+    "correct_answer": "B",
+    "explanation": "Bones, heads, and belly flaps should be saved for making fish stock, reducing waste and adding value."
+  },
+  {
+    "id": 44,
+    "question": "Why is dressed fish described as \"less intimidating for home cooks\"?",
+    "option_a": "It has already been fully cooked beforehand",
+    "option_b": "No waste parts to handle or remove",
+    "option_c": "It includes preparation instructions on its packaging",
+    "option_d": "It is smaller and lighter to carry",
+    "correct_answer": "B",
+    "explanation": "Dressed fish has all waste parts removed (head, tail, fins, scales), making it less intimidating and easier for home cooks to prepare."
+  },
+  {
+    "id": 45,
+    "question": "What is the key difference between fish sticks and fish nuggets?",
+    "option_a": "Nuggets use a different fish species entirely",
+    "option_b": "Nuggets are smaller, often in fun shapes",
+    "option_c": "Sticks use lighter breading than nuggets do",
+    "option_d": "Sticks are frozen while nuggets are fresh",
+    "correct_answer": "B",
+    "explanation": "Fish nuggets are smaller portions than sticks and are often shaped in fun designs, particularly for children."
+  }
+]

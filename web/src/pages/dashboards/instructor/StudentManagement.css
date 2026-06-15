@@ -1,0 +1,524 @@
+/* file path: web/src/pages/dashboards/instructor/StudentManagement.css */
+
+/* ── Page header ──────────────────────────────────────────── */
+.sm-ph {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-hairline);
+  margin-bottom: 28px;
+}
+.sm-ph-title {
+  font-family: var(--font-ui);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-fg);
+  margin: 0;
+}
+.sm-ph-title .it {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+/* ── Controls row ─────────────────────────────────────────── */
+.sm-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+/* Course selector */
+.sm-course-select {
+  height: 36px;
+  padding: 0 10px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 140ms ease;
+  max-width: 240px;
+}
+.sm-course-select:focus { border-color: var(--color-fg-muted); }
+
+/* ── Tab rail ─────────────────────────────────────────────── */
+.sm-tab-rail {
+  display: flex;
+  border: 1px solid var(--color-hairline);
+  width: fit-content;
+}
+.sm-tab-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: none;
+  border-right: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+  cursor: pointer;
+  color: var(--color-fg-muted);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+.sm-tab-pill:last-child { border-right: 0; }
+.sm-tab-pill:hover  { background: var(--color-surface-3); color: var(--color-fg); }
+.sm-tab-pill.active { background: var(--color-fg); color: var(--color-bg); }
+
+.sm-tab-count {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 5px;
+  background: rgba(128, 128, 128, 0.15);
+}
+.sm-tab-pill.active .sm-tab-count { background: rgba(255, 255, 255, 0.15); }
+
+/* ── Stats label ──────────────────────────────────────────── */
+.sm-stats-label {
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg-subtle);
+  letter-spacing: 0.06em;
+}
+
+/* ── Search ───────────────────────────────────────────────── */
+.sm-search {
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-family: var(--font-ui);
+  color: var(--color-fg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  outline: none;
+  width: 240px;
+  margin-left: auto;
+  transition: border-color 140ms ease;
+}
+.sm-search::placeholder { color: var(--color-fg-subtle); }
+.sm-search:focus { border-color: var(--color-fg-muted); }
+
+/* ── Table ────────────────────────────────────────────────── */
+.sm-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--color-hairline);
+  background: var(--color-surface);
+}
+.sm-table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+.sm-table thead tr { background: var(--color-surface-3); }
+.sm-table th {
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-hairline);
+  white-space: nowrap;
+}
+.sm-table th.sm-th-name { text-align: left; }
+.sm-table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--color-hairline);
+  vertical-align: middle;
+  text-align: center;
+}
+.sm-table tbody tr { transition: background 100ms ease; }
+.sm-table tbody tr:hover td { background: var(--color-surface-3); }
+.sm-table tbody tr.sm-row-clickable { cursor: pointer; }
+
+/* Student name cell */
+.sm-table td.sm-table-name-cell { display: flex; flex-direction: column; gap: 2px; text-align: left; }
+.sm-table-name-cell strong { font-size: 15.5px; font-weight: 600; line-height: 1.3; }
+.sm-table-name-cell small  { font-size: 13.5px; line-height: 1.3; }
+
+/* Hover-reveal trash button */
+.sm-trash-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  background: none;
+  color: var(--color-fg-subtle);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 150ms ease, color 150ms ease;
+}
+.sm-row-clickable:hover .sm-trash-btn { opacity: 1; }
+.sm-trash-btn:hover { color: var(--color-error, #dc2626); }
+
+/* Avatar (used in modals) */
+.sm-avatar {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--color-surface-3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+  flex-shrink: 0;
+}
+.sm-avatar--lg { width: 46px; height: 46px; font-size: 17px; }
+
+/* Score coloring */
+.sm-score--good { color: var(--color-accent) !important; font-weight: 600; }
+.sm-score--avg  { color: #f59e0b !important; font-weight: 600; }
+.sm-score--bad  { color: #ef4444 !important; font-weight: 600; }
+
+/* Table utility cells */
+.sm-td-center { text-align: center; }
+.sm-td-date   { white-space: nowrap; font-size: 14.5px; }
+.sm-td-course { font-size: 14.5px; }
+
+/* Action buttons */
+.sm-actions { display: flex; gap: 5px; flex-wrap: wrap; align-items: center; }
+.sm-actions--right { justify-content: flex-end; }
+.sm-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 10px;
+  font-size: 13px; font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer; white-space: nowrap;
+  transition: background 110ms ease, color 110ms ease, border-color 110ms ease;
+}
+.sm-btn--ghost   { background: transparent; border-color: var(--color-hairline); color: var(--color-fg-muted); }
+.sm-btn--ghost:hover { background: var(--color-surface-3); color: var(--color-fg); }
+.sm-btn--primary { background: var(--color-fg); border-color: var(--color-fg); color: var(--color-bg); }
+.sm-btn--primary:hover { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+.sm-btn--danger  { background: transparent; border-color: rgba(239, 68, 68, 0.35); color: #ef4444; }
+.sm-btn--danger:hover { background: rgba(239, 68, 68, 0.08); }
+
+/* Hover-reveal modifier — hides button until parent row is hovered or focused */
+.sm-btn--reveal {
+  opacity: 0;
+  transition: opacity 160ms ease, background 110ms ease, color 110ms ease, border-color 110ms ease;
+}
+tr:hover .sm-btn--reveal,
+tr:focus-within .sm-btn--reveal { opacity: 1; }
+
+/* ── Empty state ──────────────────────────────────────────── */
+.sm-empty {
+  padding: 72px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.sm-empty-icon {
+  color: var(--color-fg-subtle);
+  line-height: 0;
+  margin-bottom: 4px;
+}
+.sm-empty-title {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  font-family: var(--font-ui);
+  margin: 0;
+}
+.sm-empty-sub {
+  font-size: 13px;
+  color: var(--color-fg-muted);
+  font-family: var(--font-ui);
+  max-width: 320px;
+  line-height: 1.55;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+/* ── Modal shared ─────────────────────────────────────────── */
+.sm-modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000; padding: 16px;
+  animation: sm-fade 180ms ease;
+}
+@keyframes sm-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.sm-modal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  width: 100%; max-height: 90vh;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  animation: sm-modal-in 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes sm-modal-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.sm-modal--detail { max-width: 640px; }
+.sm-modal--sim    { max-width: 700px; }
+
+.sm-modal-header {
+  display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-hairline);
+  flex-shrink: 0;
+}
+.sm-modal-title { font-size: 21px; line-height: 1.1; margin: 0; }
+.sm-modal-sub   { font-size: 12px; margin: 3px 0 0; }
+.sm-modal-close {
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--color-hairline); background: transparent;
+  cursor: pointer; font-size: 16px; flex-shrink: 0;
+  transition: background 110ms ease;
+}
+.sm-modal-close:hover { background: var(--color-surface-3); }
+.sm-modal-body { flex: 1; overflow-y: auto; padding: 24px; }
+.sm-modal-footer {
+  display: flex; gap: 8px;
+  padding-top: 20px; margin-top: 24px;
+  border-top: 1px solid var(--color-hairline);
+}
+
+/* ── Detail modal ─────────────────────────────────────────── */
+.sm-detail-identity { display: flex; align-items: center; gap: 14px; }
+
+.sm-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1px;
+  background: var(--color-hairline);
+  border: 1px solid var(--color-hairline);
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+.sm-stat-cell {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 14px 16px;
+  background: var(--color-bg);
+}
+.sm-stat-val {
+  font-size: 22px; font-weight: 700; line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.sm-stat-label {
+  font-size: 9.5px; text-transform: uppercase;
+  letter-spacing: 0.16em; font-weight: 600;
+}
+
+/* Section inside modal */
+.sm-section { margin-bottom: 28px; }
+.sm-section:last-child { margin-bottom: 0; }
+.sm-section-head {
+  font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.2em; font-weight: 600;
+  margin: 0 0 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-hairline);
+}
+
+/* Inner table (modals) */
+.sm-table--inner { font-size: 12.5px; }
+.sm-table--inner th { font-size: 9px; padding: 8px 10px; }
+.sm-table--inner td { padding: 8px 10px; }
+
+/* Status badges */
+.sm-badge {
+  display: inline-block; font-size: 9.5px; font-weight: 600;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  padding: 2px 7px;
+}
+.sm-badge--pass { background: color-mix(in srgb, var(--color-accent) 14%, transparent); color: var(--color-accent); }
+.sm-badge--fail { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.sm-badge--none { background: var(--color-surface-3); color: var(--color-fg-muted); }
+.sm-badge--done { background: color-mix(in srgb, var(--color-accent) 14%, transparent); color: var(--color-accent); }
+.sm-badge--prog { background: rgba(245, 158, 11, 0.12); color: #f59e0b; }
+
+/* ── Sim modal ────────────────────────────────────────────── */
+.sm-sessions {
+  display: flex; flex-direction: column; gap: 1px;
+  background: var(--color-hairline);
+  border: 1px solid var(--color-hairline);
+  overflow: hidden;
+}
+.sm-session { background: var(--color-bg); }
+.sm-session-hdr {
+  width: 100%; display: flex; align-items: center;
+  gap: 14px; padding: 11px 16px;
+  background: transparent; border: none; cursor: pointer;
+  text-align: left; transition: background 110ms ease;
+}
+.sm-session-hdr:hover { background: var(--color-surface-2); }
+.sm-session-score-col { width: 52px; text-align: center; flex-shrink: 0; font-size: 15px; }
+.sm-session-meta { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.sm-session-date   { font-size: 13px; font-weight: 600; }
+.sm-session-detail { font-size: 11.5px; }
+.sm-session-chevron { font-size: 9px; flex-shrink: 0; }
+.sm-session-body {
+  border-top: 1px solid var(--color-hairline);
+  padding: 14px 16px; background: var(--color-surface);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+}
+.sm-session-row { display: flex; flex-direction: column; gap: 2px; }
+.sm-session-key { font-size: 9.5px; text-transform: uppercase; letter-spacing: 0.14em; }
+.sm-session-row-val { font-size: 13.5px; font-weight: 600; }
+
+/* ── Bulk action bar ──────────────────────────────────────── */
+.sm-bulk-bar {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--color-fg);
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+.sm-bulk-count {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  color: var(--color-bg);
+  margin-right: 4px;
+}
+.sm-bulk-btn {
+  padding: 6px 14px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 120ms ease;
+}
+.sm-bulk-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.sm-bulk-btn--accept { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+.sm-bulk-btn--accept:hover:not(:disabled) { opacity: 0.85; }
+.sm-bulk-btn--reject { background: transparent; border-color: rgba(239, 68, 68, 0.5); color: #ef4444; }
+.sm-bulk-btn--reject:hover:not(:disabled) { background: rgba(239, 68, 68, 0.1); }
+.sm-bulk-btn--clear  { background: transparent; border-color: rgba(255,255,255,0.2); color: var(--color-bg); }
+.sm-bulk-btn--clear:hover { border-color: rgba(255,255,255,0.5); }
+
+/* ── Sortable column headers ──────────────────────────────── */
+.sm-th-sortable {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.sm-th-sortable:hover { color: var(--color-fg); }
+.sm-sort-icon {
+  font-size: 9px;
+  opacity: 0.35;
+  margin-left: 3px;
+}
+.sm-sort-icon.active { opacity: 1; color: var(--color-accent); }
+
+/* ── Row dropdown menu (MoreHorizontal) ───────────────────── */
+.sm-row-menu { position: relative; display: inline-flex; }
+.sm-row-menu-btn {
+  display: flex; align-items: center; justify-content: center;
+  width: 26px; height: 26px;
+  background: none; border: 1px solid var(--color-hairline);
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  transition: background 110ms ease, color 110ms ease;
+}
+.sm-row-menu-btn:hover { background: var(--color-surface-3); color: var(--color-fg); }
+.sm-row-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  z-index: 20;
+  min-width: 120px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.sm-row-dropdown-item {
+  display: block; width: 100%; text-align: left;
+  padding: 8px 12px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  font-family: var(--font-ui);
+  border: none; background: none;
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  transition: background 100ms ease, color 100ms ease;
+}
+.sm-row-dropdown-item:hover { background: var(--color-surface-3); color: var(--color-fg); }
+.sm-row-dropdown-item--danger { color: var(--color-error, #dc2626); }
+.sm-row-dropdown-item--danger:hover {
+  background: color-mix(in srgb, var(--color-error, #dc2626) 8%, transparent);
+  color: var(--color-error, #dc2626);
+}
+
+/* ── Attention filter button (inline in stats label) ──────── */
+.sm-attention-btn {
+  background: none; border: none; padding: 0;
+  font-size: inherit; font-family: inherit; letter-spacing: inherit;
+  color: #ef4444;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity 120ms ease;
+}
+.sm-attention-btn:hover { opacity: 0.75; }
+.sm-attention-btn.active { font-weight: 700; text-decoration: none; }
+
+/* ── Modal tab strip ──────────────────────────────────────── */
+.sm-modal-tab-strip {
+  display: flex;
+  border-bottom: 1px solid var(--color-hairline);
+  flex-shrink: 0;
+}
+.sm-modal-tab {
+  padding: 10px 20px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+  font-family: var(--font-ui);
+  background: none; border: none; border-bottom: 2px solid transparent;
+  color: var(--color-fg-muted);
+  cursor: pointer;
+  margin-bottom: -1px;
+  transition: color 120ms ease, border-color 120ms ease;
+}
+.sm-modal-tab:hover { color: var(--color-fg); }
+.sm-modal-tab.active { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+
+/* ── Profile modal size ───────────────────────────────────── */
+.sm-modal--profile { max-width: 700px; }
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .sm-controls { gap: 10px; }
+  .sm-search   { width: 100%; margin-left: 0; }
+  .sm-tab-rail { flex-wrap: wrap; width: 100%; }
+}
+@media (max-width: 640px) {
+  .sm-ph-title      { font-size: 28px; }
+  .sm-course-select { max-width: 100%; }
+}
+
+/* ── Large-screen font scaling (1440px+) ─────────────────────────────────── */
+@media (min-width: 1440px) {
+  .sm-ph-title              { font-size: 44px; }
+  .sm-table                 { font-size: 17.5px; }
+  .sm-table th              { font-size: 13.5px; }
+  .sm-table-name-cell strong { font-size: 17.5px; }
+  .sm-table-name-cell small  { font-size: 15.5px; }
+  .sm-empty-title           { font-size: 21px; }
+  .sm-empty-sub             { font-size: 15px; }
+  .sm-modal-title           { font-size: 24px; }
+  .sm-stat-val              { font-size: 26px; }
+}

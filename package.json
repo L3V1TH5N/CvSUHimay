@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "concurrently \"cd web && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "recharts": "^3.8.1"
+  }
+}
